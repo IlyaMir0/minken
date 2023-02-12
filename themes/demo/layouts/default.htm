@@ -11,8 +11,9 @@ description = "Default layout"
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="generator" content="Winter CMS">
         <link rel="icon" type="image/png" href="{{ 'assets/images/winter.png'|theme }}">
-        <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
-        <link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet">
+        <link rel="stylesheet" href="{{['assets/scss/style.scss']|theme }}" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         {% styles %}
     </head>
     <body>
@@ -35,7 +36,8 @@ description = "Default layout"
         <!-- Scripts -->
         <script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
         <script src="{{ 'assets/vendor/bootstrap.js'|theme }}"></script>
-        <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
+        <script type="text/javascript" src="{{ 'assets/javascript/app.js'|theme }}"></script>
+        
         {% snowboard all %}
         {% scripts %}
 

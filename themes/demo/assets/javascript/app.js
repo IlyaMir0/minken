@@ -1,48 +1,18 @@
-/*
- * Application
- */
-
-$(document).tooltip({
-    selector: "[data-toggle=tooltip]"
-})
-
-/*
- * Auto hide navbar
- */
-jQuery(document).ready(function($){
-    var $header = $('.navbar-autohide'),
-        scrolling = false,
-        previousTop = 0,
-        currentTop = 0,
-        scrollDelta = 10,
-        scrollOffset = 150
-
-    $(window).on('scroll', function(){
-        if (!scrolling) {
-            scrolling = true
-
-            if (!window.requestAnimationFrame) {
-                setTimeout(autoHideHeader, 250)
-            }
-            else {
-                requestAnimationFrame(autoHideHeader)
-            }
-        }
-    })
-
-    function autoHideHeader() {
-        var currentTop = $(window).scrollTop()
-
-        // Scrolling up
-        if (previousTop - currentTop > scrollDelta) {
-            $header.removeClass('is-hidden')
-        }
-        else if (currentTop - previousTop > scrollDelta && currentTop > scrollOffset) {
-            // Scrolling down
-            $header.addClass('is-hidden')
-        }
-
-        previousTop = currentTop
-        scrolling = false
-    }
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    speed: 500,
+    effect: "fade",
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    keyboard: true,
+    loop: true,
+    autoplay: {
+        delay: 3000,
+    },
 });
