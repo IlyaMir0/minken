@@ -1,0 +1,11 @@
+plugin:
+    name: 'minken.products::lang.plugin.name'
+    description: 'minken.products::lang.plugin.description'
+    author: Minken
+    icon: wn-icon-adjust
+    replaces: {  }
+navigation:
+    products:
+        label: товары
+        url: /minken/products/products
+        icon: icon-life-ring

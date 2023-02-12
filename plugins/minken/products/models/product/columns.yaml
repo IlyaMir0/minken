@@ -1,0 +1,21 @@
+columns:
+    title:
+        label: название
+        type: text
+        searchable: true
+        sortable: true
+    price:
+        label: цена
+        type: number
+        searchable: true
+        sortable: true
+    description:
+        label: описание
+        type: text
+        searchable: true
+        sortable: true
+    images:
+        label: фото
+        type: image
+        searchable: true
+        sortable: true

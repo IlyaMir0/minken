@@ -1,0 +1,4 @@
+title: Goods
+modelClass: Minken\Products\Models\Product
+toolbar:
+    buttons: reorder_toolbar
