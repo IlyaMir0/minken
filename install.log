@@ -1,0 +1,147 @@
+[2023-02-12 13:00:13+01:00] INFO: Installer API request received {"method":"GET","endpoint":"checkPhpVersion"} 
+} 
+[2023-02-12 13:00:13+01:00] NOTICE: Trying Winter CMS API  
+[2023-02-12 13:00:13+01:00] NOTICE: Checking PHP "curl" extension  
+[2023-02-12 13:00:13+01:00] NOTICE: Compared PHP version {"installed":"8.2.0","needed":"8.0.2"} 
+[2023-02-12 13:00:13+01:00] NOTICE: Checking PHP "json" extension  
+[2023-02-12 13:00:13+01:00] NOTICE: PHP version requirement met.  
+[2023-02-12 13:00:13+01:00] NOTICE: Checking PHP "pdo" extension  
+[2023-02-12 13:00:13+01:00] NOTICE: Checking PHP "zip" extension  
+[2023-02-12 13:00:13+01:00] NOTICE: Checking PHP "mbstring" extension  
+i":"ping"} 
+[2023-02-12 13:00:13+01:00] NOTICE: Checking PHP "fileinfo" extension  
+[2023-02-12 13:00:13+01:00] NOTICE: Checking PHP "openssl" extension  
+[2023-02-12 13:00:13+01:00] NOTICE: Checking PHP "gd" extension  
+[2023-02-12 13:00:13+01:00] NOTICE: Checking PHP "filter" extension  
+[2023-02-12 13:00:13+01:00] NOTICE: Checking PHP "hash" extension  
+[2023-02-12 13:00:13+01:00] NOTICE: Checking PHP "dom" extension  
+[2023-02-12 13:00:13+01:00] NOTICE: Required PHP extensions are installed.  
+[2023-02-12 13:00:14+01:00] NOTICE: Response received from Winter CMS API {"response":"pong"} 
+[2023-02-12 13:00:14+01:00] NOTICE: Winter CMS API connection successful.  
+[2023-02-12 13:01:04+01:00] INFO: Installer API request received {"method":"POST","endpoint":"checkDatabase"} 
+[2023-02-12 13:01:04+01:00] NOTICE: Check database connection  
+[2023-02-12 13:01:04+01:00] INFO: Installer API request received {"method":"GET","endpoint":"checkWriteAccess"} 
+[2023-02-12 13:01:04+01:00] NOTICE: Current working directory is writable.  
+[2023-02-12 13:01:04+01:00] NOTICE: Found 29 table(s) {"tables":"backend_access_log, backend_users, backend_users_groups, backend_user_groups, backend_user_preferences, backend_user_roles, backend_user_throttle, cache, cms_theme_data, cms_theme_logs, cms_theme_templates, deferred_bindings, failed_jobs, janvince_smallextensions_adminfields, janvince_smallextensions_blogfields, jobs, migrations, sessions, system_event_logs, system_files, system_mail_layouts, system_mail_partials, system_mail_templates, system_parameters, system_plugin_history, system_plugin_versions, system_request_logs, system_revisions, system_settings"} 
+[2023-02-12 13:01:04+01:00] ERROR: Database is not empty. {"code":500,"exception":null} 
+[2023-02-12 13:02:15+01:00] INFO: Installer API request received {"method":"GET","endpoint":"checkWriteAccess"} 
+[2023-02-12 13:02:15+01:00] INFO: Installer API request received {"method":"POST","endpoint":"checkDatabase"} 
+[2023-02-12 13:02:15+01:00] NOTICE: Check database connection  
+[2023-02-12 13:02:15+01:00] NOTICE: Current working directory is writable.  
+[2023-02-12 13:02:15+01:00] NOTICE: Found 29 table(s) {"tables":"backend_access_log, backend_users, backend_users_groups, backend_user_groups, backend_user_preferences, backend_user_roles, backend_user_throttle, cache, cms_theme_data, cms_theme_logs, cms_theme_templates, deferred_bindings, failed_jobs, janvince_smallextensions_adminfields, janvince_smallextensions_blogfields, jobs, migrations, sessions, system_event_logs, system_files, system_mail_layouts, system_mail_partials, system_mail_templates, system_parameters, system_plugin_history, system_plugin_versions, system_request_logs, system_revisions, system_settings"} 
+[2023-02-12 13:02:15+01:00] ERROR: Database is not empty. {"code":500,"exception":null} 
+[2023-02-12 13:02:17+01:00] INFO: Installer API request received {"method":"POST","endpoint":"checkDatabase"} 
+[2023-02-12 13:02:17+01:00] NOTICE: Check database connection  
+[2023-02-12 13:02:17+01:00] INFO: Installer API request received {"method":"GET","endpoint":"checkWriteAccess"} 
+[2023-02-12 13:02:17+01:00] NOTICE: Current working directory is writable.  
+[2023-02-12 13:02:17+01:00] NOTICE: Found 29 table(s) {"tables":"backend_access_log, backend_users, backend_users_groups, backend_user_groups, backend_user_preferences, backend_user_roles, backend_user_throttle, cache, cms_theme_data, cms_theme_logs, cms_theme_templates, deferred_bindings, failed_jobs, janvince_smallextensions_adminfields, janvince_smallextensions_blogfields, jobs, migrations, sessions, system_event_logs, system_files, system_mail_layouts, system_mail_partials, system_mail_templates, system_parameters, system_plugin_history, system_plugin_versions, system_request_logs, system_revisions, system_settings"} 
+[2023-02-12 13:02:17+01:00] ERROR: Database is not empty. {"code":500,"exception":null} 
+[2023-02-12 13:02:18+01:00] INFO: Installer API request received {"method":"POST","endpoint":"checkDatabase"} 
+[2023-02-12 13:02:18+01:00] NOTICE: Check database connection  
+[2023-02-12 13:02:18+01:00] INFO: Installer API request received {"method":"GET","endpoint":"checkWriteAccess"} 
+[2023-02-12 13:02:18+01:00] NOTICE: Current working directory is writable.  
+[2023-02-12 13:02:18+01:00] NOTICE: Found 29 table(s) {"tables":"backend_access_log, backend_users, backend_users_groups, backend_user_groups, backend_user_preferences, backend_user_roles, backend_user_throttle, cache, cms_theme_data, cms_theme_logs, cms_theme_templates, deferred_bindings, failed_jobs, janvince_smallextensions_adminfields, janvince_smallextensions_blogfields, jobs, migrations, sessions, system_event_logs, system_files, system_mail_layouts, system_mail_partials, system_mail_templates, system_parameters, system_plugin_history, system_plugin_versions, system_request_logs, system_revisions, system_settings"} 
+[2023-02-12 13:02:18+01:00] ERROR: Database is not empty. {"code":500,"exception":null} 
+[2023-02-12 13:02:18+01:00] INFO: Installer API request received {"method":"GET","endpoint":"checkWriteAccess"} 
+[2023-02-12 13:02:18+01:00] NOTICE: Current working directory is writable.  
+OST","endpoint":"checkDatabase"} 
+[2023-02-12 13:02:18+01:00] NOTICE: Check database connection  
+[2023-02-12 13:02:18+01:00] NOTICE: Found 29 table(s) {"tables":"backend_access_log, backend_users, backend_users_groups, backend_user_groups, backend_user_preferences, backend_user_roles, backend_user_throttle, cache, cms_theme_data, cms_theme_logs, cms_theme_templates, deferred_bindings, failed_jobs, janvince_smallextensions_adminfields, janvince_smallextensions_blogfields, jobs, migrations, sessions, system_event_logs, system_files, system_mail_layouts, system_mail_partials, system_mail_templates, system_parameters, system_plugin_history, system_plugin_versions, system_request_logs, system_revisions, system_settings"} 
+[2023-02-12 13:02:18+01:00] ERROR: Database is not empty. {"code":500,"exception":null} 
+[2023-02-12 13:02:18+01:00] INFO: Installer API request received {"method":"POST","endpoint":"checkDatabase"} 
+[2023-02-12 13:02:18+01:00] NOTICE: Check database connection  
+[2023-02-12 13:02:18+01:00] INFO: Installer API request received {"method":"GET","endpoint":"checkWriteAccess"} 
+[2023-02-12 13:02:18+01:00] NOTICE: Current working directory is writable.  
+[2023-02-12 13:02:18+01:00] NOTICE: Found 29 table(s) {"tables":"backend_access_log, backend_users, backend_users_groups, backend_user_groups, backend_user_preferences, backend_user_roles, backend_user_throttle, cache, cms_theme_data, cms_theme_logs, cms_theme_templates, deferred_bindings, failed_jobs, janvince_smallextensions_adminfields, janvince_smallextensions_blogfields, jobs, migrations, sessions, system_event_logs, system_files, system_mail_layouts, system_mail_partials, system_mail_templates, system_parameters, system_plugin_history, system_plugin_versions, system_request_logs, system_revisions, system_settings"} 
+[2023-02-12 13:02:18+01:00] ERROR: Database is not empty. {"code":500,"exception":null} 
+[2023-02-12 13:04:43+01:00] INFO: Installer API request received {"method":"POST","endpoint":"checkDatabase"} 
+[2023-02-12 13:04:43+01:00] INFO: Installer API request received {"method":"GET","endpoint":"checkWriteAccess"} 
+[2023-02-12 13:04:43+01:00] NOTICE: Check database connection  
+[2023-02-12 13:04:43+01:00] NOTICE: Current working directory is writable.  
+[2023-02-12 13:04:43+01:00] NOTICE: Found 29 table(s) {"tables":"backend_access_log, backend_users, backend_users_groups, backend_user_groups, backend_user_preferences, backend_user_roles, backend_user_throttle, cache, cms_theme_data, cms_theme_logs, cms_theme_templates, deferred_bindings, failed_jobs, janvince_smallextensions_adminfields, janvince_smallextensions_blogfields, jobs, migrations, sessions, system_event_logs, system_files, system_mail_layouts, system_mail_partials, system_mail_templates, system_parameters, system_plugin_history, system_plugin_versions, system_request_logs, system_revisions, system_settings"} 
+[2023-02-12 13:04:43+01:00] ERROR: Database is not empty. {"code":500,"exception":null} 
+[2023-02-12 13:04:44+01:00] INFO: Installer API request received {"method":"GET","endpoint":"checkWriteAccess"} 
+[2023-02-12 13:04:44+01:00] INFO: Installer API request received {"method":"POST","endpoint":"checkDatabase"} 
+[2023-02-12 13:04:44+01:00] NOTICE: Current working directory is writable.  
+[2023-02-12 13:04:44+01:00] NOTICE: Check database connection  
+[2023-02-12 13:04:44+01:00] NOTICE: Found 29 table(s) {"tables":"backend_access_log, backend_users, backend_users_groups, backend_user_groups, backend_user_preferences, backend_user_roles, backend_user_throttle, cache, cms_theme_data, cms_theme_logs, cms_theme_templates, deferred_bindings, failed_jobs, janvince_smallextensions_adminfields, janvince_smallextensions_blogfields, jobs, migrations, sessions, system_event_logs, system_files, system_mail_layouts, system_mail_partials, system_mail_templates, system_parameters, system_plugin_history, system_plugin_versions, system_request_logs, system_revisions, system_settings"} 
+[2023-02-12 13:04:44+01:00] ERROR: Database is not empty. {"code":500,"exception":null} 
+[2023-02-12 13:04:44+01:00] INFO: Installer API request received {"method":"POST","endpoint":"checkDatabase"} 
+[2023-02-12 13:04:44+01:00] NOTICE: Check database connection  
+[2023-02-12 13:04:44+01:00] INFO: Installer API request received {"method":"GET","endpoint":"checkWriteAccess"} 
+[2023-02-12 13:04:44+01:00] NOTICE: Current working directory is writable.  
+[2023-02-12 13:04:44+01:00] NOTICE: Found 29 table(s) {"tables":"backend_access_log, backend_users, backend_users_groups, backend_user_groups, backend_user_preferences, backend_user_roles, backend_user_throttle, cache, cms_theme_data, cms_theme_logs, cms_theme_templates, deferred_bindings, failed_jobs, janvince_smallextensions_adminfields, janvince_smallextensions_blogfields, jobs, migrations, sessions, system_event_logs, system_files, system_mail_layouts, system_mail_partials, system_mail_templates, system_parameters, system_plugin_history, system_plugin_versions, system_request_logs, system_revisions, system_settings"} 
+[2023-02-12 13:04:44+01:00] ERROR: Database is not empty. {"code":500,"exception":null} 
+[2023-02-12 13:04:44+01:00] INFO: Installer API request received {"method":"POST","endpoint":"checkDatabase"} 
+[2023-02-12 13:04:44+01:00] INFO: Installer API request received {"method":"GET","endpoint":"checkWriteAccess"} 
+[2023-02-12 13:04:44+01:00] NOTICE: Check database connection  
+[2023-02-12 13:04:44+01:00] NOTICE: Current working directory is writable.  
+[2023-02-12 13:04:44+01:00] NOTICE: Found 29 table(s) {"tables":"backend_access_log, backend_users, backend_users_groups, backend_user_groups, backend_user_preferences, backend_user_roles, backend_user_throttle, cache, cms_theme_data, cms_theme_logs, cms_theme_templates, deferred_bindings, failed_jobs, janvince_smallextensions_adminfields, janvince_smallextensions_blogfields, jobs, migrations, sessions, system_event_logs, system_files, system_mail_layouts, system_mail_partials, system_mail_templates, system_parameters, system_plugin_history, system_plugin_versions, system_request_logs, system_revisions, system_settings"} 
+[2023-02-12 13:04:44+01:00] ERROR: Database is not empty. {"code":500,"exception":null} 
+[2023-02-12 13:04:44+01:00] INFO: Installer API request received {"method":"GET","endpoint":"checkWriteAccess"} 
+[2023-02-12 13:04:44+01:00] NOTICE: Current working directory is writable.  
+[2023-02-12 13:04:44+01:00] INFO: Installer API request received {"method":"POST","endpoint":"checkDatabase"} 
+[2023-02-12 13:04:44+01:00] NOTICE: Check database connection  
+[2023-02-12 13:04:44+01:00] NOTICE: Found 29 table(s) {"tables":"backend_access_log, backend_users, backend_users_groups, backend_user_groups, backend_user_preferences, backend_user_roles, backend_user_throttle, cache, cms_theme_data, cms_theme_logs, cms_theme_templates, deferred_bindings, failed_jobs, janvince_smallextensions_adminfields, janvince_smallextensions_blogfields, jobs, migrations, sessions, system_event_logs, system_files, system_mail_layouts, system_mail_partials, system_mail_templates, system_parameters, system_plugin_history, system_plugin_versions, system_request_logs, system_revisions, system_settings"} 
+[2023-02-12 13:04:44+01:00] ERROR: Database is not empty. {"code":500,"exception":null} 
+[2023-02-12 13:05:41+01:00] INFO: Installer API request received {"method":"GET","endpoint":"checkWriteAccess"} 
+[2023-02-12 13:05:41+01:00] NOTICE: Current working directory is writable.  
+[2023-02-12 13:05:41+01:00] INFO: Installer API request received {"method":"POST","endpoint":"checkDatabase"} 
+[2023-02-12 13:05:41+01:00] NOTICE: Check database connection  
+[2023-02-12 13:05:41+01:00] NOTICE: Found 0 table(s) {"tables":""} 
+[2023-02-12 13:05:41+01:00] NOTICE: Database connection established and verified empty  
+[2023-02-12 13:05:42+01:00] INFO: Installer API request received {"method":"POST","endpoint":"downloadWinter"} 
+[2023-02-12 13:05:42+01:00] NOTICE: Try downloading Winter CMS archive  
+[2023-02-12 13:05:42+01:00] NOTICE: Downloading Winter ZIP via cURL {"url":"https://github.com/wintercms/winter/archive/refs/heads/1.2.zip"} 
+[2023-02-12 13:05:47+01:00] NOTICE: Winter CMS ZIP file downloaded {"path":"C:\\Users\\avitu\\Desktop\\XAMPP\\htdocs\\hatShopWinter2.0\\.wintercms\\winter.zip"} 
+[2023-02-12 13:05:47+01:00] INFO: Installer API request received {"method":"POST","endpoint":"extractWinter"} 
+[2023-02-12 13:05:47+01:00] NOTICE: Begin extracting Winter CMS archive  
+[2023-02-12 13:05:48+01:00] NOTICE: Move subfoldered files into position {"subfolder":"winter-1.2/"} 
+[2023-02-12 13:05:48+01:00] NOTICE: Remove ZIP subfolder {"subfolder":"winter-1.2/"} 
+[2023-02-12 13:05:48+01:00] NOTICE: Make artisan command-line tool executable {"path":"C:\\Users\\avitu\\Desktop\\XAMPP\\htdocs\\hatShopWinter2.0\\.wintercms\\artisan"} 
+[2023-02-12 13:05:48+01:00] NOTICE: Remove Composer Merge plugin from composer.json if found  
+[2023-02-12 13:05:48+01:00] NOTICE: Found merge plugin in required packages - removing  
+[2023-02-12 13:05:48+01:00] NOTICE: Found merge plugin config in "extra" config definition - removing  
+[2023-02-12 13:05:48+01:00] INFO: Installer API request received {"method":"POST","endpoint":"lockDependencies"} 
+[2023-02-12 13:05:48+01:00] NOTICE: Create Composer instance  
+[2023-02-12 13:05:48+01:00] NOTICE: Set memory limit to 1.5GB  
+[2023-02-12 13:05:48+01:00] NOTICE: Set work directory for Composer {"path":"C:\\Users\\avitu\\Desktop\\XAMPP\\htdocs\\hatShopWinter2.0\\.wintercms"} 
+[2023-02-12 13:05:48+01:00] NOTICE: Create home/cache directory for Composer {"path":"C:\\Users\\avitu\\Desktop\\XAMPP\\htdocs\\hatShopWinter2.0\\.wintercms\\.composer"} 
+[2023-02-12 13:05:48+01:00] NOTICE: Set home/cache directory for Composer {"path":"C:\\Users\\avitu\\Desktop\\XAMPP\\htdocs\\hatShopWinter2.0\\.wintercms\\.composer"} 
+[2023-02-12 13:05:48+01:00] NOTICE: Run Composer "update" command - generate only a lockfile  
+[2023-02-12 13:05:57+01:00] NOTICE: Locked Composer packages {"numPackages":116,"lockFile":"C:\\Users\\avitu\\Desktop\\XAMPP\\htdocs\\hatShopWinter2.0\\.wintercms\\composer.lock"} 
+[2023-02-12 13:05:57+01:00] INFO: Installer API request received {"method":"POST","endpoint":"installDependencies"} 
+[2023-02-12 13:05:57+01:00] NOTICE: Create Composer instance  
+[2023-02-12 13:05:57+01:00] NOTICE: Set memory limit to 1.5GB  
+[2023-02-12 13:05:57+01:00] NOTICE: Set work directory for Composer {"path":"C:\\Users\\avitu\\Desktop\\XAMPP\\htdocs\\hatShopWinter2.0\\.wintercms"} 
+[2023-02-12 13:05:57+01:00] NOTICE: Set home/cache directory for Composer {"path":"C:\\Users\\avitu\\Desktop\\XAMPP\\htdocs\\hatShopWinter2.0\\.wintercms\\.composer"} 
+[2023-02-12 13:05:57+01:00] NOTICE: Run Composer "install" command - install from lockfile  
+[2023-02-12 13:06:28+01:00] NOTICE: Installed Composer packages {"numPackages":116} 
+[2023-02-12 13:06:28+01:00] INFO: Installer API request received {"method":"POST","endpoint":"setupConfig"} 
+[2023-02-12 13:06:28+01:00] NOTICE: Booting Laravel framework  
+[2023-02-12 13:06:28+01:00] NOTICE: Loading autoloader  
+[2023-02-12 13:06:28+01:00] NOTICE: Bootstrapping kernel  
+[2023-02-12 13:06:28+01:00] NOTICE: Rewriting config {"path":"C:\\Users\\avitu\\Desktop\\XAMPP\\htdocs\\hatShopWinter2.0\\.wintercms\\config\\app.php"} 
+[2023-02-12 13:06:28+01:00] NOTICE: Rewriting config {"path":"C:\\Users\\avitu\\Desktop\\XAMPP\\htdocs\\hatShopWinter2.0\\.wintercms\\config\\cms.php"} 
+[2023-02-12 13:06:28+01:00] NOTICE: Rewriting config {"path":"C:\\Users\\avitu\\Desktop\\XAMPP\\htdocs\\hatShopWinter2.0\\.wintercms\\config\\database.php"} 
+[2023-02-12 13:06:28+01:00] INFO: Installer API request received {"method":"POST","endpoint":"runMigrations"} 
+[2023-02-12 13:06:28+01:00] NOTICE: Booting Laravel framework  
+[2023-02-12 13:06:28+01:00] NOTICE: Loading autoloader  
+[2023-02-12 13:06:28+01:00] NOTICE: Bootstrapping kernel  
+[2023-02-12 13:06:28+01:00] NOTICE: Running artisan "config:clear" command  
+[2023-02-12 13:06:28+01:00] NOTICE: Command finished. {"output":"\n   INFO  Configuration cache cleared successfully.  \n\r\n"} 
+[2023-02-12 13:06:28+01:00] NOTICE: Running database migrations  
+[2023-02-12 13:06:29+01:00] NOTICE: Command finished. {"output":"Migrating application and plugins...\r\n\r\n   INFO  Migration table created.  \n\r\n\r\nMigrating System module...\r\n\r\n   INFO  Running migrations.  \n\r\n  2013_10_01_000001_Db_Deferred_Bindings ................................................................... 29ms DONE\r\n  2013_10_01_000002_Db_System_Files ........................................................................ 24ms DONE\r\n  2013_10_01_000003_Db_System_Plugin_Versions .............................................................. 14ms DONE\r\n  2013_10_01_000004_Db_System_Plugin_History ............................................................... 25ms DONE\r\n  2013_10_01_000005_Db_System_Settings ..................................................................... 10ms DONE\r\n  2013_10_01_000006_Db_System_Parameters .................................................................... 8ms DONE\r\n  2013_10_01_000007_Db_System_Add_Disabled_Flag ............................................................. 2ms DONE\r\n  2013_10_01_000008_Db_System_Mail_Templates ................................................................ 8ms DONE\r\n  2013_10_01_000009_Db_System_Mail_Layouts .................................................................. 4ms DONE\r\n  2014_10_01_000010_Db_Jobs ................................................................................. 4ms DONE\r\n  2014_10_01_000011_Db_System_Event_Logs .................................................................... 8ms DONE\r\n  2014_10_01_000012_Db_System_Request_Logs .................................................................. 6ms DONE\r\n  2014_10_01_000013_Db_System_Sessions ..................................................................... 15ms DONE\r\n  2015_10_01_000014_Db_System_Mail_Layout_Rename ............................................................ 1ms DONE\r\n  2015_10_01_000015_Db_System_Add_Frozen_Flag ............................................................... 2ms DONE\r\n  2015_10_01_000016_Db_Cache ............................................................................... 13ms DONE\r\n  2015_10_01_000017_Db_System_Revisions .................................................................... 19ms DONE\r\n  2015_10_01_000018_Db_FailedJobs ........................................................................... 4ms DONE\r\n  2016_10_01_000019_Db_System_Plugin_History_Detail_Text ................................................... 39ms DONE\r\n  2016_10_01_000020_Db_System_Timestamp_Fix ................................................................ 29ms DONE\r\n  2017_08_04_121309_Db_Deferred_Bindings_Add_Index_Session .................................................. 5ms DONE\r\n  2017_10_01_000021_Db_System_Sessions_Update ............................................................... 2ms DONE\r\n  2017_10_01_000022_Db_Jobs_FailedJobs_Update .............................................................. 15ms DONE\r\n  2017_10_01_000023_Db_System_Mail_Partials ................................................................. 6ms DONE\r\n  2017_10_23_000024_Db_System_Mail_Layouts_Add_Options_Field ................................................ 3ms DONE\r\n  2021_10_01_000025_Db_Add_Pivot_Data_To_Deferred_Bindings .................................................. 3ms DONE\r\n  2022_08_06_000026_Db_System_Add_App_Birthday_Date ......................................................... 5ms DONE\r\n  2022_10_14_000027_Db_Jobs_FailedJobs_Update .............................................................. 45ms DONE\r\n\r\n\r\nMigrating Backend module...\r\n\r\n   INFO  Running migrations.  \n\r\n  2013_10_01_000001_Db_Backend_Users ....................................................................... 38ms DONE\r\n  2013_10_01_000002_Db_Backend_User_Groups .................................................................. 8ms DONE\r\n  2013_10_01_000003_Db_Backend_Users_Groups ................................................................ 15ms DONE\r\n  2013_10_01_000004_Db_Backend_User_Throttle ............................................................... 21ms DONE\r\n  2014_01_04_000005_Db_Backend_User_Preferences ............................................................. 8ms DONE\r\n  2014_10_01_000006_Db_Backend_Access_Log ................................................................... 4ms DONE\r\n  2014_10_01_000007_Db_Backend_Add_Description_Field ........................................................ 6ms DONE\r\n  2015_10_01_000008_Db_Backend_Add_Superuser_Flag ........................................................... 3ms DONE\r\n  2016_10_01_000009_Db_Backend_Timestamp_Fix ............................................................... 10ms DONE\r\n  2017_10_01_000010_Db_Backend_User_Roles .................................................................. 15ms DONE\r\n  2018_12_16_000011_Db_Backend_Add_Deleted_At ............................................................... 1ms DONE\r\n\r\n\r\nMigrating Cms module...\r\n\r\n   INFO  Running migrations.  \n\r\n  2014_10_01_000001_Db_Cms_Theme_Data ....................................................................... 8ms DONE\r\n  2016_10_01_000002_Db_Cms_Timestamp_Fix .................................................................... 4ms DONE\r\n  2017_10_01_000003_Db_Cms_Theme_Logs ...................................................................... 26ms DONE\r\n  2018_11_01_000001_Db_Cms_Theme_Templates ................................................................. 36ms DONE\r\n\r\n\r\nSeeding System module...\r\n\r\n   INFO  Seeded System.  \n\r\n\r\nSeeding Backend module...\r\n\r\n   INFO  Seeded Backend.  \n\r\nMigrating Winter Demo (Winter.Demo) plugin...\r\n\r\n   INFO  Running migrations.  \n\r\n  1.0.1:    First version of Demo ........................................................................... 4ms DONE\r\n\r\n\r\n   INFO  Migration complete.  \n\r\n   INFO  \\Backend\\Database\\Seeds\\DatabaseSeeder reported the following:  \n\r\n    - The following password has been automatically generated for the \"admin\" account: OrGsM2qYSA5NWbCPDKA1e1\r\n\r\n"} 
+[2023-02-12 13:06:29+01:00] INFO: Installer API request received {"method":"POST","endpoint":"createAdmin"} 
+[2023-02-12 13:06:29+01:00] NOTICE: Booting Laravel framework  
+[2023-02-12 13:06:29+01:00] NOTICE: Loading autoloader  
+[2023-02-12 13:06:29+01:00] NOTICE: Bootstrapping kernel  
+[2023-02-12 13:06:29+01:00] NOTICE: Finding initial admin account  
+[2023-02-12 13:06:29+01:00] NOTICE: Changing admin account to details provided in installation  
+[2023-02-12 13:06:29+01:00] INFO: Installer API request received {"method":"POST","endpoint":"cleanUp"} 
+[2023-02-12 13:06:29+01:00] NOTICE: Removing installation files  
+[2023-02-12 13:06:29+01:00] NOTICE: Removing temporary installation folders  
+[2023-02-12 13:06:31+01:00] NOTICE: Removing core development files  
+[2023-02-12 13:06:31+01:00] NOTICE: Moving files from temporary work directory to final installation path {"workDir":"C:\\Users\\avitu\\Desktop\\XAMPP\\htdocs\\hatShopWinter2.0\\.wintercms","installDir":"C:\\Users\\avitu\\Desktop\\XAMPP\\htdocs\\hatShopWinter2.0"} 
+[2023-02-12 13:06:31+01:00] NOTICE: Removing work directory  
+[2023-02-12 13:06:31+01:00] NOTICE: Installation complete!  
