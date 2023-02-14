@@ -1,0 +1,6 @@
+fields:
+    url:
+        label: фотография
+        mode: file
+        span: auto
+        type: mediafinder

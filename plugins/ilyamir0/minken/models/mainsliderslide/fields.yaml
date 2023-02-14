@@ -1,0 +1,10 @@
+fields:
+    image:
+        label: картинка
+        mode: file
+        span: auto
+        type: mediafinder
+    link:
+        label: ссылка
+        span: auto
+        type: text

@@ -1,0 +1,197 @@
+title = "Minken"
+url = "/product/:slug"
+layout = "default"
+is_hidden = 0
+
+[ProductList]
+[CategoryList]
+==
+function onStart()
+{
+  $this['slug'] = $this->param('slug');
+}
+==
+{% set data = ProductList.getDetail(slug) %}
+<section class="container">
+    <div class="breadcrumbs">
+        <ul class="breadcrumbs__items">
+            <li class="breadcrumbs__item"><a href="/">Главная</a></li>
+            <li class="breadcrumbs__item active">Каталог</li>
+        </ul>
+    </div>
+    <!-- <h1 class="image-slider swiper-title">Примеры наших работ</h1> -->
+    <div class="row">
+        <aside class="col-sm-3">
+            <h3><span>Категории</span></h3>
+            <div class="list-group">
+                <ul class="list-item">
+                    {% for category in CategoryList.getCategories() %}
+                    <li><a href="/catalog/{{category.id}}">{{category.title}}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </aside>
+        <div id="content" class="col-sm-9">
+            <div itemscope="" itemtype="http://schema.org/Product">
+                <h1 itemprop="name">{{ data.title }}</h1>
+                <div class="row product-info">
+                    <div class="col-sm-6">
+                        <div class="thumbnails">
+                            <div class="image"><a
+                                    href="https://rusmodern.ru/image/cache/catalog/fetr/29/1-29-01-600x800.jpg"
+                                    title="{{data.title}}"><img class="img-responsive" itemprop="image"
+                                        src="{{ data.images[0].url|media }}"
+                                        title="{{data.title}}" alt=""></a></div>
+                            <div class="image-additional">
+                              {% for image in data.images %}
+                                <img src="{{ image.url|media }}" >
+                              {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="list-unstyled description">
+                            <li><b>Код товара:</b> <span itemprop="mpn">"КОКО ШАНЕЛЬ" №29</span></li>
+                            <li><b>Доступность:</b> <span style="color:#53af2e; font-weight:bold;">На складе</span></li>
+                        </ul>
+
+                        <ul class="price-box">
+                            <li class="price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer"><span
+                                    class="real" itemprop="price">3 000.00р.</span><span itemprop="availability"
+                                    content="На складе"></span></li>
+                            <li></li>
+                        </ul>
+                        <div id="product">
+                            <h3><span>Доступные опции</span></h3>
+                            <div class="form-group">
+                                <label class="control-label">Размер</label>
+                                <div id="input-option2448">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="option[2448]" value="7077">
+                                            <img src="https://rusmodern.ru/image/cache/no_image-50x50.jpg" alt="55"
+                                                class="img-thumbnail">
+
+                                            55 </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="option[2448]" value="7078">
+                                            <img src="https://rusmodern.ru/image/cache/no_image-50x50.jpg" alt="56"
+                                                class="img-thumbnail">
+
+                                            56 </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="option[2448]" value="7079">
+                                            <img src="https://rusmodern.ru/image/cache/no_image-50x50.jpg" alt="57"
+                                                class="img-thumbnail">
+
+                                            57 </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="option[2448]" value="7080">
+                                            <img src="https://rusmodern.ru/image/cache/no_image-50x50.jpg" alt="58"
+                                                class="img-thumbnail">
+
+                                            58 </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="option[2448]" value="7081">
+                                            <img src="https://rusmodern.ru/image/cache/no_image-50x50.jpg" alt="59"
+                                                class="img-thumbnail">
+
+                                            59 </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="input-option2449">Заметка</label>
+                                <textarea name="option[2449]" rows="5" placeholder="Заметка" id="input-option2449"
+                                    class="form-control"></textarea>
+                            </div>
+                            <div class="cart">
+                                <div>
+                                    <div class="qty">
+                                        <label class="control-label" for="input-quantity">Кол-во</label>
+                                        <a class="qtyBtn mines" href="javascript:void(0);">-</a>
+                                        <input type="text" name="quantity" value="1" size="2" id="input-quantity"
+                                            class="form-control">
+                                        <a class="qtyBtn plus" href="javascript:void(0);">+</a>
+
+                                        <input type="hidden" name="product_id" value="682">
+                                        <div class="clear"></div>
+                                    </div>
+                                    <button type="button" id="button-cart" data-loading-text="Загрузка..."
+                                        class="btn btn-primary btn-lg">В корзину</button>
+                                </div>
+                                <div>
+                                    <button type="button" class="wishlist" onclick="wishlist.add('682');"><i
+                                            class="fa fa-heart"></i> В закладки</button>
+                                    <br>
+                                    <button type="button" class="wishlist" onclick="compare.add('682');"><i
+                                            class="fa fa-exchange"></i> В сравнение</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rating" itemprop="aggregateRating" itemscope=""
+                            itemtype="http://schema.org/AggregateRating">
+                            <meta itemprop="ratingValue" content="0">
+                            <p>
+                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                <a href="" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;"><span
+                                        itemprop="reviewCount">0 отзывов</span></a> / <a href=""
+                                    onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;">Написать
+                                    отзыв</a>
+                            </p>
+                        </div>
+                        <hr>
+                        <!-- AddThis Button BEGIN -->
+                        <div class="addthis_toolbox addthis_default_style addthis_32x32_style"> <a
+                                class="addthis_button_facebook"></a> <a class="addthis_button_twitter"></a> <a
+                                class="addthis_button_google_plusone_share"></a> <a
+                                class="addthis_button_pinterest_share"></a> <a class="addthis_button_compact"></a><a
+                                class="addthis_counter addthis_bubble_style"></a> </div>
+                        <script type="text/javascript"
+                            src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-514863386b357649"></script>
+                        <!-- AddThis Button END -->
+                    </div>
+                </div>
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#tab-description" data-toggle="tab">Описание</a></li>
+                    <li><a href="#tab-review" data-toggle="tab">Отзывы (0)</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab-description" itemprop="description">
+                        <p>Элегантная женская шляпа с невысокой округлой тульей и нешироким полем необычной формы в
+                            стиле Коко Шанель. Дополнена репсовой лентой в цвет с небольшим бантиком. Высота тульи 10см.
+                            ширина поля до сгиба 4 см. и высота после сгиба 4 см. Для вашего комфорта в шляпу вшит
+                            колпак из вискозы и лобная лента.</p>
+
+                        <p>Вы можете заказать данную модель в любой расцветки из нашего каталога.</p>
+
+                        <p>После выбора размера - укажите в заметках желаемый цвет и пожелания, или после поступления
+                            заказа наши менеджеры свяжуться с Вами и уточнят данную информацию.</p>
+                    </div>
+                    <div class="tab-pane" id="tab-review">
+                        <form class="form-horizontal" id="form-review">
+                            <div id="review">
+                                <p>Нет отзывов об этом товаре.</p>
+                            </div>
+                            <h2>Написать отзыв</h2>
+                            Пожалуйста <a href="https://rusmodern.ru/index.php?route=account/login"> авторизуйтесь</a>
+                            или <a href="https://rusmodern.ru/simpleregister/"> зарегистрируйтесь</a> для просмотра
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

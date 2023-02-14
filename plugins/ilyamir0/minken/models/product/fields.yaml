@@ -1,0 +1,45 @@
+fields:
+    title:
+        label: 'название товара'
+        span: auto
+        type: text
+    price:
+        label: цена
+        span: auto
+        type: number
+    description:
+        label: описание
+        span: auto
+        type: text
+    remains:
+        label: 'остатки товара'
+        span: auto
+        type: number
+    color:
+        label: цвет
+        span: auto
+        type: colorpicker
+    size:
+        label: размер
+        span: auto
+        type: number
+    slug:
+        label: slug
+        span: auto
+        type: text
+    active:
+        label: 'показывать товар'
+        span: auto
+        type: switch
+tabs:
+    fields:
+        images:
+            span: auto
+            path: $/ilyamir0/minken/controllers/images/_field_images.htm
+            type: partial
+            tab: Image
+        categories:
+            span: auto
+            path: $/ilyaMir0/minken/controllers/categories/_field_categories.htm
+            type: partial
+            tab: Image

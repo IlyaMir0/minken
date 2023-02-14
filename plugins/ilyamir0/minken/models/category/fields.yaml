@@ -1,0 +1,5 @@
+fields:
+    title:
+        label: 'категория товара'
+        span: auto
+        type: text

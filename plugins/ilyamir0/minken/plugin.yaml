@@ -1,0 +1,19 @@
+plugin:
+    name: 'ilyamir0.minken::lang.plugin.name'
+    description: 'ilyamir0.minken::lang.plugin.description'
+    author: IlyaMir0
+    icon: wn-icon-adjust
+    replaces: {  }
+navigation:
+    main-menu-item:
+        label: Каталог
+        url: /ilyamir0/minken/products/
+        icon: icon-life-ring
+    Slide:
+        label: 'Главный слайдер'
+        url: /ilyamir0/minken/mainslider
+        icon: icon-life-ring
+    main-menu-item2:
+        label: 'Категории товаров'
+        url: /ilyamir0/minken/categories
+        icon: icon-life-ring

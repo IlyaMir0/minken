@@ -41,7 +41,7 @@ return [
         'mysql' => [
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
-            'database' => env('DB_DATABASE', 'hatshop'),
+            'database' => env('DB_DATABASE', 'hatshopwinter2.0'),
             'driver' => 'mysql',
             'engine' => 'InnoDB',
             'host' => env('DB_HOST', 'localhost'),

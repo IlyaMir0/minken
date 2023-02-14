@@ -1,0 +1,10 @@
+name: MainSlider
+form: $/ilyamir0/minken/models/mainsliderslide/fields.yaml
+modelClass: Ilyamir0\Minken\Models\MainSliderSlide
+defaultRedirect: ilyamir0/minken/mainslider
+create:
+    redirect: 'ilyamir0/minken/mainslider/update/:id'
+    redirectClose: ilyamir0/minken/mainslider
+update:
+    redirect: ilyamir0/minken/mainslider
+    redirectClose: ilyamir0/minken/mainslider

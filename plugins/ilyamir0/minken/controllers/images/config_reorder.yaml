@@ -1,0 +1,4 @@
+title: Images
+modelClass: Ilyamir0\Minken\Models\Image
+toolbar:
+    buttons: reorder_toolbar

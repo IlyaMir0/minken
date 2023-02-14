@@ -1,0 +1,38 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table ilyamir0_minken_products'
+    - builder_table_create_ilyamir0_minken_products.php
+1.0.3:
+    - 'Created table ilyamir0_minken_images'
+    - builder_table_create_ilyamir0_minken_images.php
+1.0.4:
+    - 'Updated table ilyamir0_minken_products'
+    - builder_table_update_ilyamir0_minken_products.php
+1.0.5:
+    - 'Updated table ilyamir0_minken_products'
+    - builder_table_update_ilyamir0_minken_products_2.php
+1.0.6:
+    - 'Updated table ilyamir0_minken_images'
+    - builder_table_update_ilyamir0_minken_images.php
+1.0.7:
+    - 'Updated table ilyamir0_minken_images'
+    - builder_table_update_ilyamir0_minken_images_2.php
+1.0.8:
+    - 'Created table ilyamir0_minken_swiper'
+    - builder_table_create_ilyamir0_minken_swiper.php
+1.0.9:
+    - 'Updated table ilyamir0_minken_swiper'
+    - builder_table_update_ilyamir0_minken_main_slider.php
+1.0.10:
+    - 'Updated table ilyamir0_minken_main_slider'
+    - builder_table_update_ilyamir0_minken_main_slider_2.php
+1.0.11:
+    - 'Updated table ilyamir0_minken_main_slider'
+    - builder_table_update_ilyamir0_minken_main_slider_3.php
+1.0.12:
+    - 'Created table ilyamir0_minken_categories'
+    - builder_table_create_ilyamir0_minken_categories.php
+1.0.13:
+    - 'Created table ilyamir0_minken_category_product'
+    - builder_table_create_ilyamir0_minken_category_product.php

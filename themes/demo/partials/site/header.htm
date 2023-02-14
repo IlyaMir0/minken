@@ -1,29 +1,36 @@
 ==
 function onStart()
 {
-    $this['backendUrl'] = Backend::url('/');
+$this['backendUrl'] = Backend::url('/');
 }
 ==
-<!-- Nav -->
-<nav id="layout-nav" class="navbar navbar-inverse navbar-fixed-top navbar-autohide" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{ 'home'|page }}">Winter Demo</a>
+<div class="header">
+    <div class="header__inner container">
+        <div class="header-row">
+            <a href="/">
+                <img src="{{ 'assets/images/лэйбл для колпака.jpg'|theme }}" class="header__logo" alt="">
+            </a>
+            <!-- <div class="header__logo"></div> -->
+            <div class="header__nav">
+                <a class="header__nav-menu" href="/catalog">Каталог</a>
+                <a class="header__nav-menu" href="#">О компании</a>
+                <a class="header__nav-menu" href="#">Магазины</a>
+            </div>
         </div>
-        <div class="collapse navbar-collapse navbar-main-collapse">
-            <ul class="nav navbar-nav">
-                <li class="separator hidden-xs"></li>
-                <li class="{% if this.page.id == 'home' %}active{% endif %}"><a href="{{ 'home'|page }}">Basic concepts</a></li>
-                <li class="{% if this.page.id == 'ajax' %}active{% endif %}"><a href="{{ 'ajax'|page }}">AJAX framework</a></li>
-                <li class="{% if this.page.id == 'plugins' %}active{% endif %}"><a href="{{ 'plugins'|page }}">Plugin components</a></li>
-                <li><a href="{{ backendUrl }}">Sign in to the Backend</a></li>
-            </ul>
+        <div class="header__info">
+            <a href="mailto:denis-nechkin@yandex.ru" class="header__info-email">denis-nechkin@yandex.ru</a>
+            <a href="tel:+79184943020" class="header__info-number">+7(918)4943020</a>
+            <a target="_blank" href="https://wa.me/89184943020?text=Здравствуйте, хочу оформить заказ"
+                class="header__info-whatsApp"></a>
+            <a target="_blank" href="https://web-telegram.ru/#911160145" class="header__info-telegramm"></a>
+            <!--   <div class="header__select-favorite">
+          <div class="header__select-cart__count">4</div>
+        </div>
+        <div class="header__select-cart">
+          <div class="header__select-cart__count">8</div>
+        </div> -->
+            <div class="header__info-burger">
+            </div>
         </div>
     </div>
-</nav>
+</div>

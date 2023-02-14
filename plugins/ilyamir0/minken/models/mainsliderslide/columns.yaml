@@ -1,0 +1,7 @@
+columns:
+    link:
+        label: ссылка
+        type: text
+    image:
+        label: картинка
+        type: image

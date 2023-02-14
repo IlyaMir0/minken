@@ -1,0 +1,103 @@
+title = "Minken"
+url = "/catalog/:id?"
+layout = "default"
+is_hidden = 0
+
+[ProductList]
+[CategoryList]
+==
+function onStart()
+{
+    $this['id'] = $this->param('id');
+}
+==
+<section class="container">
+    <div class="breadcrumbs">
+        <ul class="breadcrumbs__items">
+            <li class="breadcrumbs__item"><a href="/">Главная</a></li>
+            <li class="breadcrumbs__item active">Каталог</li>
+        </ul>
+    </div>
+    <!-- <h1 class="image-slider swiper-title">Примеры наших работ</h1> -->
+    <div class="row">
+        <aside class="col-sm-3">
+            <h3><span>Категории</span></h3>
+            <div class="list-group">
+                <ul class="list-item">
+                    {% for category in CategoryList.getCategories() %}
+                    <li><a href="/catalog/{{category.id}}">{{category.title}}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </aside>
+        <div id="content" class="col-sm-9">
+            <div class="row">
+                {% for i in ProductList.getByCategory(id) %}
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                    <div class="product-layout product-grid ">
+                        <div class="product-thumb">
+                            <div class="image"><a href="/product/{{ i.slug }}">
+                                <img src="{{i.images[0].url|media}}" title=""  class="img-responsive"></a>
+                            </div>
+                            <div>
+                                <div class="caption">
+                                    <h4><a href="">{{i.title}}</a></h4>
+                                    <p class="description">Неотъемлемой частью модного образа станет актуальное Канотье.
+                                        Цилиндрическая тулья и узкие поля допо..</p>
+                                    <p class="price"> {{i.price}} ₽</p>
+                                </div>
+                                <div class="button-group">
+                                    <button class="btn-primary" type="button" onclick="cart.add('680', '1');">
+                                        <span>В корзину</span></button>
+                                    <div class="add-to-links">
+                                        <button type="button" data-toggle="tooltip" title=""
+                                            onclick="wishlist.add('680');" data-original-title="В закладки"><i
+                                                class="fa fa-heart"></i> <span>В закладки</span></button>
+                                        <button type="button" data-toggle="tooltip" title=""
+                                            onclick="compare.add('680');" data-original-title="В сравнение"><i
+                                                class="fa fa-exchange"></i> <span>В сравнение</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="col-sm-12">
+                <p>Интересно, что успех головных уборов так же капризен, как и сама мода. Сначала каждый стремиться
+                    купить фетровую шляпу, чтобы разнообразить создаваемые образы, а через время о головном уборе
+                    забывают. К счастью, в настоящее время удобные и стильные шляпы снова в тренде, а наше
+                    производство в Краснодаре предлагает огромное разнообразие моделей, так что подобрать шляпу для
+                    каждого покупателя и любого образа не составит труда!</p>
+
+                <p>Особенности фетровых шляп с полями и без</p>
+
+                <p>Конечно же, основным отличием данных изделий от прочих является сам материал. Натуральный фетр —
+                    это результат валяния тончайшего пуха овцы, кролика или козы. Материал натурален, не вызывает
+                    аллергии, не линяет. Среди прочих преимуществ фетровых шляп также стоит отметить комфорт носки в
+                    любую погоду, наличие различных оттенков, сохранение тепла.</p>
+
+                <p>В зависимости от толщины волокон и особенностей производства, все фетровые шляпы в целом можно
+                    разделить на 2 основные группы:</p>
+
+                <ul>
+                    <li>
+                        <p>Жесткие варианты. Такие модели отличаются плотностью, твердой конструкцией, не меняющей
+                            свою форму. Такой тип аксессуаров следует подбирать в строгом соответствии с размером,
+                            иначе во время носки вы будете испытывать дискомфорт.</p>
+                    </li>
+                    <li>
+                        <p>Мягкие варианты. Такие модели выполняются из мягкого фетра, а потому они могут принимать
+                            любую форму. Например, поля можно будет загнуть или оставить вмятину на тулье.</p>
+                    </li>
+                </ul>
+
+                <p>В настоящее время женские и мужские модели впитали особенности друг друга, и появились новые
+                    варианты привычных фасонов, а также унисекс-шляпки, поэтому перечислить все варианты довольно
+                    сложно. В любом случае, наш ассортимент отличается большим разнообразием, поэтому подобрать
+                    подходящее решение к любому образу — проще простого!</p>
+            </div>
+        </div>
+    </div>
+</section>

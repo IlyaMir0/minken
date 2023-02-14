@@ -1,0 +1,12 @@
+title: MainSlider
+modelClass: Ilyamir0\Minken\Models\MainSliderSlide
+list: $/ilyamir0/minken/models/mainsliderslide/columns.yaml
+recordUrl: 'ilyamir0/minken/mainslider/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

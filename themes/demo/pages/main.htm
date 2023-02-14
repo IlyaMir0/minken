@@ -1,132 +1,57 @@
-url = "/main"
+title = "Minken"
+url = "/"
 layout = "default"
+is_hidden = 0
+
+[ProductList]
+[MainSlider]
 ==
+
 <body>
-  <div class="header">
-    <div class="header__inner container">
-      <div class="header-row">
-        <img src="{{ 'assets/images/лэйбл для колпака.jpg'|theme }}" class="header__logo" alt="">
-        <!-- <div class="header__logo"></div> -->
-        <div class="header__nav">
-          <a class="header__nav-menu" href="#">Каталог</a>
-          <a class="header__nav-menu" href="#">О компании</a>
-          <a class="header__nav-menu" href="#">Магазины</a>
-        </div>
-      </div>
-      
-      <div class="header__info">
-        <a href="mailto:denis-nechkin@yandex.ru" class="header__info-email">denis-nechkin@yandex.ru</a>
-        <a href="tel:+79184943020" class="header__info-number">+7(918)4943020</a>
-        <a target="_blank" href="https://wa.me/89184943020?text=Здравствуйте, хочу оформить заказ"
-          class="header__info-whatsApp"></a>
-        <a target="_blank" href="https://web-telegram.ru/#911160145" class="header__info-telegramm"></a>
-        <!--   <div class="header__select-favorite">
-          <div class="header__select-cart__count">4</div>
-        </div>
-        <div class="header__select-cart">
-          <div class="header__select-cart__count">8</div>
-        </div> -->
-        <div class="header__info-burger">
-        </div>
-      </div>
-    </div>
-  </div>
   <section class="order container">
-    <div class="breadcrumbs">
-      <ul class="breadcrumbs__items">
-        <li class="breadcrumbs__item">Главная</li>
-        <li class="breadcrumbs__item active">Оформление заказа</li>
-      </ul>
-    </div>
     <h1 class="image-slider swiper-title">Примеры наших работ</h1>
     <div class="image-slider swiper mySwiper container">
       <div class="image-slider swiper-wrapper">
-        <div class="image-slider swiper-slide"><img src="{{ 'assets/images/норковый ободок вид спереди коричневый.jpg'|theme }}"></div>
-        <div class="image-slider swiper-slide"><img src="{{ 'assets/images/норковый ободок вид сзади.jpg'|theme }}"></div>
-        <div class="image-slider swiper-slide"><img src="{{ 'assets/images/цельномеховая спереди.jpg'|theme }}"></div>
-        <div class="image-slider swiper-slide"><img src="./assets/images/цельномеховая сзади.jpg"></div>
+      {% for i in MainSlider.getSlider() %}
+        <div class="image-slider swiper-slide"><img src="{{i.image|media}}"></div>
+      {% endfor %}
       </div>
       <div class="image-slider swiper-pagination"></div>
       <div class="image-slider swiper-button-next"></div>
       <div class="image-slider swiper-button-prev"></div>
     </div>
     <div class="recommendations-title">
-      <h1 class="recommendations-title_text">Рекомендуемые</h1> 
+      <h1 class="recommendations-title_text">Рекомендуемые</h1>
     </div>
-    <div class="row products-category featured_carousel mod" style="display: block;">
-      <div class="product-grid col-lg-3 col-md-3 col-sm-4 col-xs-6">  
-          <div class="product-thumb clearfix">
-            <div class="image"><a href="https://rusmodern.ru/index.php?route=product/product&amp;path=89&amp;product_id=685"><img src="https://rusmodern.ru/image/cache/catalog/fetr/63/9-63-25-218x329.jpg" alt="Фетровая шляпа &quot;Федора&quot; №63" title="Фетровая шляпа &quot;Федора&quot; №63" class="img-responsive"></a></div>
-            <div class="caption">
-              <h4><a href="https://rusmodern.ru/index.php?route=product/product&amp;path=89&amp;product_id=685">Фетровая шляпа "Федора" №63</a></h4>
-              <!--<p>Идеальным решением для завершения образа станет шляпа Федора, изготовленная из 100% шерстяного фетра..</p>-->
-                      <p class="price">
-                          3 000.00р.                  </p>
-                            </div>
-            <div class="button-group">
-              <button class="btn-primary" type="button" onclick="cart.add('685');"><span>В корзину</span></button>
-              <div class="add-to-links">
-              <button type="button" data-toggle="tooltip" title="" onclick="wishlist.add('685');" data-original-title="В закладки"><i class="fa fa-heart"></i></button>
-              <button type="button" data-toggle="tooltip" title="" onclick="compare.add('685');" data-original-title="В сравнение"><i class="fa fa-exchange"></i></button>
-              </div>
-            </div>
+    <div class="row products-category featured_carousel mod">
+      {% for i in ProductList.getlist() %}
+      <div class="product-grid col-lg-3 col-md-3 col-sm-4 col-xs-6">
+        <div class="product-thumb clearfix">
+          <div class="image"><a><img src="{{i.images[0].url|media}}" alt="Фетровая шляпа &quot;Федора&quot; №63"
+                title="Фетровая шляпа &quot;Федора&quot; №63" class="img-responsive"></a></div>
+          <div class="caption">
+            <h4><a>{{i.title}}</a>
+            </h4>
+            <h4><a>{{i.description}}</a>
+            </h4>
+            <!--<p>Идеальным решением для завершения образа станет шляпа Федора, изготовленная из 100% шерстяного фетра..</p>-->
+            <p class="price">
+              {{i.price}}р </p>
           </div>
+          <!-- <div class="button-group">
+            <button class="btn-primary" type="button" onclick="cart.add('685');"><span>В корзину</span></button>
+            <div class="add-to-links">
+              <button type="button" data-toggle="tooltip" title="" onclick="wishlist.add('685');"
+                data-original-title="В закладки"><i class="fa fa-heart"></i></button>
+              <button type="button" data-toggle="tooltip" title="" onclick="compare.add('685');"
+                data-original-title="В сравнение"><i class="fa fa-exchange"></i></button>
+            </div>
+          </div> -->
         </div>
-      <div class="product-grid col-lg-3 col-md-3 col-sm-4 col-xs-6">  
-          <div class="product-thumb clearfix">
-            <div class="image"><a href="https://rusmodern.ru/index.php?route=product/product&amp;path=89&amp;product_id=684"><img src="https://rusmodern.ru/image/cache/catalog/fetr/53/2-53-01-218x329.jpg" alt="Фетровая шляпа &quot;Федора&quot; №53" title="Фетровая шляпа &quot;Федора&quot; №53" class="img-responsive"></a></div>
-            <div class="caption">
-              <h4><a href="https://rusmodern.ru/index.php?route=product/product&amp;path=89&amp;product_id=684">Фетровая шляпа "Федора" №53</a></h4>
-              <!--<p>Идеальным решением для завершения образа станет шляпа Федора, изготовленная из 100% шерстяного фетра..</p>-->
-                      <p class="price">
-                          3 000.00р.                  </p>
-                            </div>
-            <div class="button-group">
-              <button class="btn-primary" type="button" onclick="cart.add('684');"><span>В корзину</span></button>
-              <div class="add-to-links">
-              <button type="button" data-toggle="tooltip" title="" onclick="wishlist.add('684');" data-original-title="В закладки"><i class="fa fa-heart"></i></button>
-              <button type="button" data-toggle="tooltip" title="" onclick="compare.add('684');" data-original-title="В сравнение"><i class="fa fa-exchange"></i></button>
-              </div>
-            </div>
-          </div>
-        </div>
-      <div class="product-grid col-lg-3 col-md-3 col-sm-4 col-xs-6">  
-          <div class="product-thumb clearfix">
-            <div class="image"><a href="https://rusmodern.ru/index.php?route=product/product&amp;path=75&amp;product_id=679"><img src="https://rusmodern.ru/image/cache/catalog/fetr/900/%D0%A8%D0%BB%D1%8F%D0%BF%D1%8B1857-218x329.jpg" alt="КАНОТЬЕ №900" title="КАНОТЬЕ №900" class="img-responsive"></a></div>
-            <div class="caption">
-              <h4><a href="https://rusmodern.ru/index.php?route=product/product&amp;path=75&amp;product_id=679">КАНОТЬЕ №900</a></h4>
-              <!--<p>Неотъемлемой частью модного образа станет актуальное Канотье. Цилиндрическая тулья и узкие поля допо..</p>-->
-                      <p class="price">
-                          3 000.00р.                  </p>
-                            </div>
-            <div class="button-group">
-              <button class="btn-primary" type="button" onclick="cart.add('679');"><span>В корзину</span></button>
-              <div class="add-to-links">
-              <button type="button" data-toggle="tooltip" title="" onclick="wishlist.add('679');" data-original-title="В закладки"><i class="fa fa-heart"></i></button>
-              <button type="button" data-toggle="tooltip" title="" onclick="compare.add('679');" data-original-title="В сравнение"><i class="fa fa-exchange"></i></button>
-              </div>
-            </div>
-          </div>
-        </div>
-      <div class="product-grid col-lg-3 col-md-3 col-sm-4 col-xs-6">  
-          <div class="product-thumb clearfix">
-            <div class="image"><a href="https://rusmodern.ru/index.php?route=product/product&amp;path=75&amp;product_id=682"><img src="https://rusmodern.ru/image/cache/catalog/fetr/29/1-29-01-218x329.jpg" alt="&quot;КОКО ШАНЕЛЬ&quot; №29" title="&quot;КОКО ШАНЕЛЬ&quot; №29" class="img-responsive"></a></div>
-            <div class="caption">
-              <h4><a href="https://rusmodern.ru/index.php?route=product/product&amp;path=75&amp;product_id=682">"КОКО ШАНЕЛЬ" №29</a></h4>
-              <!--<p>Элегантная женская шляпа с невысокой округлой тульей и нешироким полем необычной формы в стиле Коко ..</p>-->
-                      <p class="price">
-                          3 000.00р.                  </p>
-                            </div>
-            <div class="button-group">
-              <button class="btn-primary" type="button" onclick="cart.add('682');"><span>В корзину</span></button>
-              <div class="add-to-links">
-              <button type="button" data-toggle="tooltip" title="" onclick="wishlist.add('682');" data-original-title="В закладки"><i class="fa fa-heart"></i></button>
-              <button type="button" data-toggle="tooltip" title="" onclick="compare.add('682');" data-original-title="В сравнение"><i class="fa fa-exchange"></i></button>
-              </div>
-            </div>
-          </div>
-        </div><span class="clearfix visible-lg-block"></span>
       </div>
+      {% endfor %}
+      </div><span class="clearfix visible-lg-block"></span>
+    </div>
   </section>
   <footer class="footer">
     <div class="footer__inner container">
@@ -168,24 +93,24 @@ layout = "default"
   </footer>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&width=100&amp;" type="text/javascript"></script>
   <script>
-  var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
-    speed: 500,
-    effect: "fade",
-    navigation: {
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      speed: 500,
+      effect: "fade",
+      navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-    },
-    pagination: {
+      },
+      pagination: {
         el: ".swiper-pagination",
         clickable: true,
-    },
-    keyboard: true,
-    loop: true,
-    autoplay: {
+      },
+      keyboard: true,
+      loop: true,
+      autoplay: {
         delay: 3000,
-    },
-});
+      },
+    });
   </script>
-  
+
 </body>

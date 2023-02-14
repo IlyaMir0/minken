@@ -1,0 +1,25 @@
+images:
+  label: Фотографии
+  view:
+    list: $/ilyamir0/minken/models/image/columns.yaml
+    toolbarButtons: create|add|delete
+    recordsPerPage: 10
+  manage:
+    list: $/ilyamir0/minken/models/image/columns.yaml
+    form: $/ilyamir0/minken/models/image/fields.yaml
+    toolbarButtons: add|delete
+    recordsPerPage: 10
+
+categories:
+  label: Категории
+  view:
+    list: $/ilyamir0/minken/models/category/columns.yaml
+    toolbarButtons: add|remove
+    showSearch: true
+    recordsPerPage: 10
+  manage:
+    list: $/ilyamir0/minken/models/category/columns.yaml
+    form: $/ilyamir0/minken/models/category/fields.yaml
+    toolbarButtons: add|remove
+    showSearch: true
+    recordsPerPage: 10

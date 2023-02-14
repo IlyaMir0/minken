@@ -1,0 +1,4 @@
+title: MainSlider
+modelClass: Ilyamir0\Minken\Models\MainSliderSlide
+toolbar:
+    buttons: reorder_toolbar

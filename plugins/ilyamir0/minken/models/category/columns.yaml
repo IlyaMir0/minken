@@ -1,0 +1,4 @@
+columns:
+    title:
+        label: 'название товара'
+        type: text

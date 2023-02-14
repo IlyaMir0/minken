@@ -1,0 +1,10 @@
+name: Products
+form: $/ilyamir0/minken/models/product/fields.yaml
+modelClass: Ilyamir0\Minken\Models\Product
+defaultRedirect: ilyamir0/minken/products
+create:
+    redirect: 'ilyamir0/minken/products/update/:id'
+    redirectClose: ilyamir0/minken/products
+update:
+    redirect: ilyamir0/minken/products
+    redirectClose: ilyamir0/minken/products

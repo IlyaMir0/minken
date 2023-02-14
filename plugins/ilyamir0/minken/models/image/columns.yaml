@@ -1,0 +1,6 @@
+columns:
+    url:
+        label: фотография
+        type: image
+        searchable: true
+        sortable: false

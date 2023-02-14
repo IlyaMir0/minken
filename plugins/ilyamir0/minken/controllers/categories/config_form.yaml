@@ -1,0 +1,11 @@
+name: Categories
+modelClass: Ilyamir0\Minken\Models\Category
+form: $/ilyamir0/minken/models/category/fields.yaml
+defaultRedirect: ilyamir0/minken/categories
+create:
+    redirect: 'ilyamir0/minken/categories/update/:id'
+    redirectClose: ilyamir0/minken/categories
+update:
+    redirect: ilyamir0/minken/categories
+    redirectClose: ilyamir0/minken/categories
+preview: {  }

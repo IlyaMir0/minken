@@ -1,0 +1,26 @@
+columns:
+    color:
+        label: цвет
+        type: number
+        searchable: true
+        sortable: false
+    title:
+        label: 'название товара'
+        type: text
+        searchable: true
+        sortable: false
+    description:
+        label: 'описание товара'
+        type: text
+        searchable: true
+        sortable: false
+    remains:
+        label: 'остатки товара'
+        type: number
+        searchable: true
+        sortable: false
+    active:
+        label: 'показывать товар'
+        type: switch
+        searchable: true
+        sortable: false

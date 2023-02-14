@@ -1,0 +1,4 @@
+title: Products
+modelClass: Ilyamir0\Minken\Models\Product
+toolbar:
+    buttons: reorder_toolbar

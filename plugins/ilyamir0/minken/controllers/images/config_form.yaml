@@ -1,0 +1,10 @@
+name: Images
+form: $/ilyamir0/minken/models/image/fields.yaml
+modelClass: Ilyamir0\Minken\Models\Image
+defaultRedirect: ilyamir0/minken/images
+create:
+    redirect: 'ilyamir0/minken/images/update/:id'
+    redirectClose: ilyamir0/minken/images
+update:
+    redirect: ilyamir0/minken/images
+    redirectClose: ilyamir0/minken/images

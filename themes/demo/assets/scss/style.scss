@@ -1,6 +1,16 @@
 @import "fonts";
 @import "colors";
 @import "helpers";
+@import "steal";
+
 @import "header";
 @import "footer";
+
 @import "main";
+@import "catalog";
+
+@import "bootstrap/bootstrap";
+
+* {
+  box-sizing: border-box;
+}
