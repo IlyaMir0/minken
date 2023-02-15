@@ -12,6 +12,7 @@ var swiper = new Swiper(".mySwiper", {
     },
     keyboard: true,
     loop: true,
+
     autoplay: {
         delay: 3000,
     },

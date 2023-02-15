@@ -36,3 +36,9 @@
 1.0.13:
     - 'Created table ilyamir0_minken_category_product'
     - builder_table_create_ilyamir0_minken_category_product.php
+1.0.14:
+    - 'Updated table ilyamir0_minken_products'
+    - builder_table_update_ilyamir0_minken_products_3.php
+1.0.15:
+    - 'Updated table ilyamir0_minken_products'
+    - builder_table_update_ilyamir0_minken_products_4.php

@@ -31,6 +31,10 @@ fields:
         label: 'показывать товар'
         span: auto
         type: switch
+    code:
+        label: code
+        span: auto
+        type: text
 tabs:
     fields:
         images:
@@ -41,5 +45,10 @@ tabs:
         categories:
             span: auto
             path: $/ilyaMir0/minken/controllers/categories/_field_categories.htm
+            type: partial
+            tab: Image
+        sizes:
+            span: auto
+            path: $/ilyamir0/minken/controllers/sizes/_field_sizes.htm
             type: partial
             tab: Image

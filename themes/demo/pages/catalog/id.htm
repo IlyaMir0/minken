@@ -8,7 +8,7 @@ is_hidden = 0
 ==
 function onStart()
 {
-    $this['id'] = $this->param('id');
+$this['id'] = $this->param('id');
 }
 ==
 <section class="container">
@@ -37,7 +37,7 @@ function onStart()
                     <div class="product-layout product-grid ">
                         <div class="product-thumb">
                             <div class="image"><a href="/product/{{ i.slug }}">
-                                <img src="{{i.images[0].url|media}}" title=""  class="img-responsive"></a>
+                                    <img src="{{i.images[0].url|media}}" title="" class="img-responsive"></a>
                             </div>
                             <div>
                                 <div class="caption">

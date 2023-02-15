@@ -5,30 +5,36 @@ is_hidden = 0
 
 [ProductList]
 [MainSlider]
+[CategoryList]
 ==
-
+function onStart()
+{
+$this['id'] = $this->param('id');
+}
+==
 <body>
   <section class="order container">
     <h1 class="image-slider swiper-title">Примеры наших работ</h1>
     <div class="image-slider swiper mySwiper container">
       <div class="image-slider swiper-wrapper">
-      {% for i in MainSlider.getSlider() %}
+        {% for i in MainSlider.getSlider() %}
         <div class="image-slider swiper-slide"><img src="{{i.image|media}}"></div>
-      {% endfor %}
+        {% endfor %}
       </div>
       <div class="image-slider swiper-pagination"></div>
       <div class="image-slider swiper-button-next"></div>
       <div class="image-slider swiper-button-prev"></div>
     </div>
-    <div class="recommendations-title">
-      <h1 class="recommendations-title_text">Рекомендуемые</h1>
-    </div>
-    <div class="row products-category featured_carousel mod">
-      {% for i in ProductList.getlist() %}
-      <div class="product-grid col-lg-3 col-md-3 col-sm-4 col-xs-6">
+    <h1 class="recommendations-title">
+      <span class="recommendations-title_text">Рекомендуемые</span>
+    </h1>
+    <div class="row products-category featured_carousel mod container">
+     {% for i in ProductList.getlist() %}
+      
+      <div class="product-grid col-lg-12 col-md-12 col-sm-12 col-xs-3">
         <div class="product-thumb clearfix">
-          <div class="image"><a><img src="{{i.images[0].url|media}}" alt="Фетровая шляпа &quot;Федора&quot; №63"
-                title="Фетровая шляпа &quot;Федора&quot; №63" class="img-responsive"></a></div>
+          <div class="image"><a href="/product/{{ i.slug }}" ><img src="{{i.images[0].url|media}}" alt=""
+                title="" class="img-responsive"></a></div>
           <div class="caption">
             <h4><a>{{i.title}}</a>
             </h4>
@@ -48,12 +54,11 @@ is_hidden = 0
             </div>
           </div> -->
         </div>
-      </div>
+      </div> 
       {% endfor %}
-      </div><span class="clearfix visible-lg-block"></span>
     </div>
   </section>
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="footer__inner container">
       <div class="footer__items">
         <div class="footer__item">
@@ -90,7 +95,7 @@ is_hidden = 0
         <div class="footer__item-info_text"> Сделано в студии <span class="footer__item-info_icon"></span> 5 углов</div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&width=100&amp;" type="text/javascript"></script>
   <script>
     var swiper = new Swiper(".mySwiper", {
@@ -107,6 +112,10 @@ is_hidden = 0
       },
       keyboard: true,
       loop: true,
+      simulateTouch: false,
+      grabCursor: true,
+      touchRatio: 2,
+      touchAngle: 45,
       autoplay: {
         delay: 3000,
       },

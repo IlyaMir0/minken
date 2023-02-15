@@ -30,6 +30,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @media screen and (max-width: 540px) {
+            justify-content: center;
+        }
     }
 
     &__nav {
@@ -52,6 +55,16 @@
             }
 
         }
+        &-mobile {
+            display: none;
+             
+            @media screen and (max-width: 540px) {
+                display: flex;
+                padding-bottom: 10px;
+                gap: 10px; 
+                justify-content: center;
+            }
+        }
     }
 
     &__logo {
@@ -62,14 +75,13 @@
     &__info {
         display: flex;
         justify-content: flex-end;
-        gap: 15px;
         @media screen and (max-width: 640px) {
-            gap: 20px;
+            flex-direction: column;
         }
 
         &-whatsApp {
-            @media screen and (max-width: 540px) {
-                display: none;
+            @media screen and (max-width: 640px) {
+                /* display: none; */
             }
             &::before {
                 font-family: icon;
@@ -83,7 +95,7 @@
 
         &-telegramm {
             @media screen and (max-width: 540px) {
-                display: none;
+                /* display: none; */
             }
             &::before {
                 font-family: icon;
@@ -200,6 +212,15 @@
                 }
             }
            
+        }
+        &-wrapper {
+            @media screen and (max-width: 540px) {
+                gap: 10px;
+                flex-direction: column;
+                margin: 0 auto;
+            }
+            gap: 15px;
+            display: flex;
         }
     }
 }

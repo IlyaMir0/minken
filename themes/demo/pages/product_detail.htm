@@ -51,8 +51,8 @@ function onStart()
                     </div>
                     <div class="col-sm-6">
                         <ul class="list-unstyled description">
-                            <li><b>Код товара:</b> <span itemprop="mpn">"КОКО ШАНЕЛЬ" №29</span></li>
-                            <li><b>Доступность:</b> <span style="color:#53af2e; font-weight:bold;">На складе</span></li>
+                            <li><b>Код товара:</b> <span itemprop="mpn">{{data.title}} "{{data.code}}"</span></li>
+                            <li><b>В наличии:</b> <span style="color:#53af2e; font-weight:bold;">{{ data.remains }} шт</span></li>
                         </ul>
 
                         <ul class="price-box">

@@ -24,5 +24,5 @@ class CategoryList extends ComponentBase
     }
     public function getCategories() {
         return Category::all();       
-    }
+    }    
 }

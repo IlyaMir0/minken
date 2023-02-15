@@ -1,22 +1,16 @@
 .recommendations {
     &-title {
+        margin: 0 0 20px;
+        line-height: normal;
         border-bottom: 1px solid $Primary-black;
-        padding-bottom: 10px;
+        color: #000;
+
         &_text {
-            max-width: 300px;
-            width: 100%;
-            position: relative;
-
-
-            &::after {
-                width: 100%;
-                position: absolute;
-                content: '';
-                bottom: -13px;
-                border-bottom: 4px solid $Secondary-gray;
-                border-radius: 2px;
-                display: block;
-            }
+            border-bottom: 4px solid $Secondary-gray;
+            display: inline-block;
+            padding-right: 5px;
+            padding-bottom: 3px;
+            margin-bottom: -3px;
         }
     }
 }

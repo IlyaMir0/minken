@@ -21,6 +21,9 @@ h1 {
     font-size: 40px;
     line-height: 42px;
     font-weight: 400;
+    @media screen and (max-width: 540px) {
+        font-size: 32px;
+    }
 }
 
 h2 {

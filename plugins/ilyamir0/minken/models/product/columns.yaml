@@ -24,3 +24,6 @@ columns:
         type: switch
         searchable: true
         sortable: false
+    code:
+        label: 'код товара'
+        type: text
