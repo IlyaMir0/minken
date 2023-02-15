@@ -1,0 +1,4 @@
+columns:
+    size:
+        label: 'размер товара'
+        type: number

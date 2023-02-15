@@ -1,0 +1,11 @@
+name: Sizes
+modelClass: Ilyamir0\Minken\Models\Size
+form: $/ilyamir0/minken/models/sizes/fields.yaml
+defaultRedirect: ilyamir0/minken/sizes
+create:
+    redirect: 'ilyamir0/minken/sizes/update/:id'
+    redirectClose: ilyamir0/minken/sizes
+update:
+    redirect: ilyamir0/minken/sizes
+    redirectClose: ilyamir0/minken/sizes
+preview: {  }

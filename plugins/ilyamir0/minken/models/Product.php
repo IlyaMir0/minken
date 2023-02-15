@@ -34,6 +34,7 @@ class Product extends Model
     
     public $hasMany = [
         'images' => \Ilyamir0\Minken\Models\Image::class,
+        'sizes' => \Ilyamir0\Minken\Models\Size::class,
     ];
 
     public $belongsToMany = [

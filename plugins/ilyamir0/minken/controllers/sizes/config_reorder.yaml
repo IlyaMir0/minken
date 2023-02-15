@@ -1,0 +1,5 @@
+title: Sizes
+modelClass: Ilyamir0\Minken\Models\Size
+nameFrom: size
+toolbar:
+    buttons: reorder_toolbar
