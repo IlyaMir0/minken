@@ -23,3 +23,17 @@ categories:
     toolbarButtons: add|remove
     showSearch: true
     recordsPerPage: 10
+
+sizes:
+  label: Размеры
+  view:
+    list: $/ilyamir0/minken/models/size/columns.yaml
+    toolbarButtons: add|remove
+    showSearch: true
+    recordsPerPage: 10
+  manage:
+    list: $/ilyamir0/minken/models/size/columns.yaml
+    form: $/ilyamir0/minken/models/size/fields.yaml
+    toolbarButtons: add|remove
+    showSearch: true
+    recordsPerPage: 10
