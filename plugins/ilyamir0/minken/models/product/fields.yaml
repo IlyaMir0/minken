@@ -19,22 +19,18 @@ fields:
         label: цвет
         span: auto
         type: colorpicker
-    size:
-        label: размер
-        span: auto
-        type: number
     slug:
         label: slug
+        span: auto
+        type: text
+    code:
+        label: code
         span: auto
         type: text
     active:
         label: 'показывать товар'
         span: auto
         type: switch
-    code:
-        label: code
-        span: auto
-        type: text
 tabs:
     fields:
         images:

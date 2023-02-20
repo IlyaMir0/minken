@@ -33,7 +33,7 @@ $this['id'] = $this->param('id');
         <div id="content" class="col-sm-9">
             <div class="row">
                 {% for i in ProductList.getByCategory(id) %}
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-6">
                     <div class="product-layout product-grid ">
                         <div class="product-thumb">
                             <div class="image"><a href="/product/{{ i.slug }}">
@@ -42,11 +42,10 @@ $this['id'] = $this->param('id');
                             <div>
                                 <div class="caption">
                                     <h4><a href="">{{i.title}}</a></h4>
-                                    <p class="description">Неотъемлемой частью модного образа станет актуальное Канотье.
-                                        Цилиндрическая тулья и узкие поля допо..</p>
+                                    <p class="description"></p>
                                     <p class="price"> {{i.price}} ₽</p>
                                 </div>
-                                <div class="button-group">
+                                <!-- <div class="button-group">
                                     <button class="btn-primary" type="button" onclick="cart.add('680', '1');">
                                         <span>В корзину</span></button>
                                     <div class="add-to-links">
@@ -57,7 +56,7 @@ $this['id'] = $this->param('id');
                                             onclick="compare.add('680');" data-original-title="В сравнение"><i
                                                 class="fa fa-exchange"></i> <span>В сравнение</span></button>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>

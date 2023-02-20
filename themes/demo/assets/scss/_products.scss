@@ -1,7 +1,10 @@
 .container,
 .container-sm {
   @media (max-width: 770px) {
-    max-width: 100% !important;
+    max-width: 620px !important;
+  }
+  @media (max-width: 630px) {
+    max-width: 540px !important;
   }
 }
 
@@ -11,6 +14,12 @@
   line-height: normal;
   border-bottom: 1px solid #e5e5e5;
   color: #000
+}
+
+.col-sm-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 #container h1,
@@ -1585,13 +1594,18 @@ div.required .control-label:before {
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 40px;
   grid-column-gap: 20px;
-  @media screen and (max-width: 520px ) {
+  @media screen and (max-width: 540px ) {
     grid-template-columns: 1fr;
   }
 }
 
 .product-thumb h4 {
   display: flex;
+  font-size: 24px;
+}
+
+.product-thumb h4:hover {
+  text-decoration: underline;
 }
 
 .product-filter {
@@ -1640,23 +1654,19 @@ div.required .control-label:before {
 }
 
 .product-thumb h4 a {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 18px;
   text-decoration: none;
   margin: 0 auto;
   padding: 0;
-  color: #333
-}
-
-.product-thumb h4 a:hover {
-  text-decoration: underline
+  color: $Primary-black
 }
 
 .product-thumb .price {
   margin-top: 20px;
   color: #f15a23;
-  font-size: 13px;
-  font-weight: 700
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .product-thumb .price-new {
@@ -1736,7 +1746,7 @@ div.required .control-label:before {
 
 .owl-carousel,
 .product-grid {
-  margin-bottom: 15px
+  margin-bottom: 15px;
 }
 
 .owl-carousel .product-thumb,

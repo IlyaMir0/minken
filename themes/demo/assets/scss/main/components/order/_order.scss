@@ -51,6 +51,14 @@
     }
 }
 
+.breadcrumbs__item a {
+    color: $Primary-gray;
+    transition: all .3s ease-in-out; 
+    &:hover {
+        color: $Primary-black;
+    }
+}
+
 .order {
     &__items {
         display: grid;
