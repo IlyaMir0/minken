@@ -14,6 +14,6 @@ class Sizes extends Controller
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('Ilyamir0.Minken', 'main-menu-item');
+        BackendMenu::setContext('Ilyamir0.Minken', 'size');
     }
 }

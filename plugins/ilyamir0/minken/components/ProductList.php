@@ -20,6 +20,7 @@ class ProductList extends ComponentBase
         return Product::all();
     }
 
+
     public function getByCategory($categoryId) {
         if(is_null($categoryId)) {
             return Product::all();

@@ -4,7 +4,38 @@ function onStart()
 $this['backendUrl'] = Backend::url('/');
 }
 ==
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="header">
+    <!-- Имитация смартфона/планшета -->
+    <div class="mobile-container">
+        <!-- Верхнее меню навигации -->
+        <div class="topnav">
+            <a href="/">
+                <img src="{{ 'assets/images/лэйбл для колпака.jpg'|theme }}" class="header__logo" alt="">
+            </a>
+            <div id="myLinks">
+                <a href="/catalog">Каталог</a>
+                <a href="tryhow_js_mobile_navbar.php">О Нас</a>
+                <div class="header__info">
+                    <div class="header__info-wrapper">
+                        <a href="mailto:denis-nechkin@yandex.ru" class="header__info-email">denis-nechkin@yandex.ru</a>
+                        <a href="tel:+79184943020" class="header__info-number">+7(918)4943020</a>
+                        <div class="header__icons">
+                            <a target="_blank" href="https://wa.me/89184943020?text=Здравствуйте, хочу оформить заказ"
+                                class="header__info-whatsApp"></a>
+                            <a target="_blank" href="https://web-telegram.ru/#911160145" class="header__info-telegramm"></a>
+                        </div>
+        
+                    </div>
+                    <div class="header__info-burger">
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars navigation-button"></i>
+            </a>
+        </div>
+    </div>
     <div class="header__inner container">
         <div class="header-row">
             <a href="/">
@@ -20,7 +51,6 @@ $this['backendUrl'] = Backend::url('/');
         <div class="header__nav-mobile">
             <a class="header__nav-menu" href="/catalog">Каталог</a>
             <a class="header__nav-menu" href="#">О компании</a>
-            <a class="header__nav-menu" href="#">Магазины</a>
         </div>
         <div class="header__info">
             <div class="header__info-wrapper">
@@ -33,14 +63,25 @@ $this['backendUrl'] = Backend::url('/');
                 </div>
 
             </div>
-            <!--   <div class="header__select-favorite">
-          <div class="header__select-cart__count">4</div>
-        </div>
-        <div class="header__select-cart">
-          <div class="header__select-cart__count">8</div>
-        </div> -->
             <div class="header__info-burger">
             </div>
         </div>
+        <!--   <div class="header__select-favorite">
+      <div class="header__select-cart__count">4</div>
     </div>
-</div>
+    <div class="header__select-cart">
+      <div class="header__select-cart__count">8</div>
+    </div> -->
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+                x.style.opacity = "0"
+            } else {
+                x.style.display = "flex";
+                x.style.opacity = "1"
+            }
+        }
+    </script>

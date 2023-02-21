@@ -17,3 +17,7 @@ navigation:
         label: 'Категории товаров'
         url: /ilyamir0/minken/categories
         icon: icon-life-ring
+    size:
+        label: Размеры
+        url: /ilyamir0/minken/sizes
+        icon: icon-life-ring

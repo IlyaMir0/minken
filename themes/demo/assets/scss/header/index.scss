@@ -1,15 +1,88 @@
+.mobile-container {
+    color: white;
+    border-radius: 10px;
+    display: none;
+    @media screen and (max-width: 540px) {
+        display: block;
+    }
+  }
+/* Стиль меню навигации */
+.topnav {
+    overflow: hidden;
+    position: relative;
+    padding: 0 16px;
+}
+
+.navigation-button {
+    font-size: 30px !important;
+}
+
+/* Скрыть ссылки внутри меню навигации ( кроме главной/логотип) */
+.topnav #myLinks {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    transition: opacity .2s ease-in-out;
+
+}
+
+/* Ссылки меню навигации по стилю */
+.topnav a {
+    color: black;
+    padding: 0px;
+    text-decoration: none;
+    font-size: 17px;
+    display: flex;
+    transition: all .3s ease-in-out;
+}
+
+/* Стиль меню гамбургера */
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 16px;
+    top: 25px;
+}
+
+/* Добавить серый цвет фона при наведении курсора мыши */
+.topnav a:hover {
+    color: gray;
+}
+
+/* Стиль активной ссылки (или главная/логотип) */
+
 .header {
+    .active {
+        color: white;
+    }
+    
     width: 100%;
     border-bottom: 1px solid $Secondary-gray;
-    padding: 26px 0px 25px 0px;
+    padding: 0px 0px 25px 0px;
     margin-bottom: 50px;
+
+    &__inner {
+        @media screen and (max-width: 540px) {
+            display: none;
+        }
+    
+    }
+
+    &__icons {
+        display: flex;
+    }
+
     &__select {
         &-burger {
             display: none;
             position: relative;
+
             @media screen and (max-width: 540px) {
                 display: block;
                 padding-right: 40px;
+
                 &::before {
                     position: absolute;
                     top: 8px;
@@ -20,16 +93,19 @@
                     cursor: pointer;
                     transition: all 0.3s ease-in-out;
                 }
+
                 &:hover::before {
                     color: $Primary-gray;
                 }
             }
         }
     }
+
     &-row {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         @media screen and (max-width: 540px) {
             justify-content: center;
         }
@@ -38,12 +114,15 @@
     &__nav {
         display: flex;
         gap: 40px;
+
         @media screen and (max-width: 640px) {
             gap: 20px;
         }
+
         @media screen and (max-width: 540px) {
-            display: none;
+            flex-direction: column;
         }
+
         &-menu {
             font-size: 14px;
             transition: all 0.3s ease-in-out;
@@ -55,26 +134,33 @@
             }
 
         }
+
         &-mobile {
             display: none;
-             
-            @media screen and (max-width: 540px) {
+
+            /* @media screen and (max-width: 540px) {
                 display: flex;
                 padding-bottom: 10px;
-                gap: 10px; 
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
                 justify-content: center;
-            }
+            } */
         }
     }
 
     &__logo {
         text-decoration: none;
         max-width: 180px;
+        /* @media screen and (max-width: 540px) {
+            max-width: 100%;
+        } */
     }
 
     &__info {
         display: flex;
         justify-content: flex-end;
+
         @media screen and (max-width: 640px) {
             flex-direction: column;
         }
@@ -83,6 +169,7 @@
             @media screen and (max-width: 640px) {
                 /* display: none; */
             }
+
             &::before {
                 font-family: icon;
                 content: "\e90b";
@@ -97,6 +184,7 @@
             @media screen and (max-width: 540px) {
                 /* display: none; */
             }
+
             &::before {
                 font-family: icon;
                 content: "\e90a";
@@ -111,6 +199,7 @@
             @media screen and (max-width: 540px) {
                 display: none;
             }
+
             position: relative;
 
             &::before {
@@ -135,6 +224,7 @@
                 @extend %count;
             }
         }
+
         &-number {
             display: flex;
             align-items: center;
@@ -142,6 +232,7 @@
             font-size: 15px;
             cursor: pointer;
             transition: all .3s ease-in-out;
+
             &::before {
                 font-family: icon;
                 content: "\e90c";
@@ -150,13 +241,16 @@
                 cursor: pointer;
                 transition: all 0.3s ease-in-out;
             }
+
             &:hover::before {
                 color: $Primary-gray;
             }
+
             &:hover {
                 color: $Primary-gray;
             }
         }
+
         &-email {
             display: flex;
             align-items: center;
@@ -164,6 +258,7 @@
             font-size: 15px;
             cursor: pointer;
             transition: all .3s ease-in-out;
+
             &::before {
                 font-family: icon;
                 content: "\e90d";
@@ -172,15 +267,19 @@
                 cursor: pointer;
                 transition: all 0.3s ease-in-out;
             }
+
             &:hover::before {
                 color: $Primary-gray;
             }
+
             &:hover {
                 color: $Primary-gray;
             }
         }
+
         &-cart {
             position: relative;
+
             &::before {
                 font-family: icon;
                 content: "\e902";
@@ -188,6 +287,7 @@
                 color: $Primary-black;
                 cursor: pointer;
                 transition: all 0.3s ease-in-out;
+
                 @media screen and (max-width: 540px) {
                     font-size: 28px;
                 }
@@ -196,6 +296,7 @@
             &::after {
                 @extend %numbers;
                 content: "";
+
                 @media screen and (max-width: 540px) {
                     display: none;
                 }
@@ -207,18 +308,20 @@
 
             &__count {
                 @extend %count;
+
                 @media screen and (max-width: 540px) {
                     display: none;
                 }
             }
-           
+
         }
+
         &-wrapper {
             @media screen and (max-width: 540px) {
                 gap: 10px;
                 flex-direction: column;
-                margin: 0 auto;
             }
+
             gap: 15px;
             display: flex;
         }

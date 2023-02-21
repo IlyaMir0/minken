@@ -12,13 +12,16 @@ function onStart()
 $this['id'] = $this->param('id');
 }
 ==
+
 <body>
   <section class="order container">
     <h1 class="image-slider swiper-title">Примеры наших работ</h1>
     <div class="image-slider swiper mySwiper container">
       <div class="image-slider swiper-wrapper">
         {% for i in MainSlider.getSlider() %}
-        <div class="image-slider swiper-slide"><img src="{{i.image|media}}"></div>
+        <div class="image-slider swiper-slide">
+            <img src="{{i.image|media}}">
+        </div>
         {% endfor %}
       </div>
       <div class="image-slider swiper-pagination"></div>
@@ -29,12 +32,12 @@ $this['id'] = $this->param('id');
       <span class="recommendations-title_text">Рекомендуемые</span>
     </h1>
     <div class="row products-category featured_carousel mod container">
-     {% for i in ProductList.getlist() %}
-      
+      {% for i in ProductList.getlist()[:3] %}
+
       <div class="product-grid col-lg-12 col-md-12 col-sm-12 col-xs-3">
         <div class="product-thumb clearfix">
-          <div class="image"><a href="/product/{{ i.slug }}" ><img src="{{i.images[0].url|media}}" alt=""
-                title="" class="img-responsive"></a></div>
+          <div class="image"><a href="/product/{{ i.slug }}"><img src="{{i.images[0].url|media}}" alt="" title=""
+                class="img-responsive"></a></div>
           <div class="caption">
             <h4><a>{{i.title}}</a>
             </h4>
@@ -52,7 +55,7 @@ $this['id'] = $this->param('id');
             </div>
           </div> -->
         </div>
-      </div> 
+      </div>
       {% endfor %}
     </div>
   </section>
@@ -94,7 +97,7 @@ $this['id'] = $this->param('id');
       </div>
     </div>
   </footer> -->
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&width=100&amp;" type="text/javascript"></script>
+  <!-- <script src="../assets/javascript/app.js"></script> -->
   <script>
     var swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
@@ -118,6 +121,7 @@ $this['id'] = $this->param('id');
         delay: 3000,
       },
     });
+
   </script>
 
 </body>

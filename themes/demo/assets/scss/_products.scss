@@ -3,6 +3,7 @@
   @media (max-width: 770px) {
     max-width: 620px !important;
   }
+
   @media (max-width: 630px) {
     max-width: 540px !important;
   }
@@ -534,7 +535,7 @@ div.required .control-label:before {
 #menu .nav>li>a {
   color: #fff;
   -webkit-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
   -ms-transition: all .3s ease-in-out
 }
 
@@ -588,7 +589,7 @@ div.required .control-label:before {
 
 #menu .nav>li:hover>a,
 .btn {
-  -moz-transition: all .3s ease-in-out
+  transition: all .3s ease-in-out
 }
 
 #menu .nav>li:hover>a {
@@ -1594,7 +1595,8 @@ div.required .control-label:before {
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 40px;
   grid-column-gap: 20px;
-  @media screen and (max-width: 540px ) {
+
+  @media screen and (max-width: 540px) {
     grid-template-columns: 1fr;
   }
 }
@@ -1924,15 +1926,27 @@ div.required .control-label:before {
 }
 
 .product-info .image-additional {
-  overflow: hidden;
-  margin-left: -7px;
-  margin-top: 15px
+  margin-top: 10px;
+  display: flex;
+  grid-column-gap: 0px;
 }
 
 .product-info .image-additional img {
   max-width: 75px;
+  border: 1px solid $Primary-gray;
+  padding: 2px;
+  border-radius: 5px;
   height: auto;
-  display: block
+  cursor: pointer;
+  display: block;
+  transition: all .3s ease-in-out;
+}
+
+
+.product-info .image-additional img:hover {
+  border-color: #6E6E6E;
+  transform: scale(1.05);
+  box-shadow: 5px 5px 5px 0px rgb(34 60 80 / 21%);
 }
 
 #column-left+#content .product-info .image-additional img,
@@ -1943,9 +1957,13 @@ div.required .control-label:before {
 .product-info .image-additional a {
   float: left;
   display: block;
-  margin-left: 7px;
   margin-bottom: 15px
 }
+
+.product-info .image-additional a:nth-child(n + 2) {
+  margin-left: 5px;
+}
+
 
 .product-info .image-additional a:active,
 .product-info .image-additional a:focus,
@@ -2570,3 +2588,4 @@ div.required .control-label:before {
 .ac_over {
   background-color: #f1f0f0
 }
+
