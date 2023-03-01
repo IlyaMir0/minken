@@ -63,15 +63,15 @@ $this['slug'] = $this->param('slug');
                         </ul>
 
                         <ul class="price-box">
-                            <li class="price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer"><span
-                                    class="real" itemprop="price">3 000.00р.</span><span itemprop="availability"
+                            <li class="price" itemprop="offers"><span
+                                    class="real" itemprop="price">{{data.price}}.00 ₽</span><span itemprop="availability"
                                     content="На складе"></span></li>
                             <li></li>
                         </ul>
                         <div id="product">
                             <h3><span>Доступные опции</span></h3>
                             <div class="form-group">
-                                <label class="control-label">Размеры</label>
+                                <label class="control-label">Размеры:</label>
                                 <div id="input-option2448">
                                     <div class="radio">
                                         {% for i in data.sizes %}
@@ -107,21 +107,6 @@ $this['slug'] = $this->param('slug');
                                 </div>
                             </div> -->
                         </div>
-                        <div class="rating" itemprop="aggregateRating" itemscope=""
-                            itemtype="http://schema.org/AggregateRating">
-                            <meta itemprop="ratingValue" content="0">
-                            <p>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-                                <a href="" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;"><span
-                                        itemprop="reviewCount">0 отзывов</span></a> / <a href=""
-                                    onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;">Написать
-                                    отзыв</a>
-                            </p>
-                        </div>
                         <hr>
                         <!-- AddThis Button BEGIN -->
                         <div class="addthis_toolbox addthis_default_style addthis_32x32_style"> <a
@@ -134,31 +119,9 @@ $this['slug'] = $this->param('slug');
                         <!-- AddThis Button END -->
                     </div>
                 </div>
-                <ul class="nav nav-tabs">
-                    <li class="active"><a href="#tab-description" data-toggle="tab">Описание</a></li>
-                    <li><a href="#tab-review" data-toggle="tab">Отзывы (0)</a></li>
-                </ul>
                 <div class="tab-content">
                     <div class="tab-pane active" id="tab-description" itemprop="description">
-                        <p>Элегантная женская шляпа с невысокой округлой тульей и нешироким полем необычной формы в
-                            стиле Коко Шанель. Дополнена репсовой лентой в цвет с небольшим бантиком. Высота тульи 10см.
-                            ширина поля до сгиба 4 см. и высота после сгиба 4 см. Для вашего комфорта в шляпу вшит
-                            колпак из вискозы и лобная лента.</p>
-
-                        <p>Вы можете заказать данную модель в любой расцветки из нашего каталога.</p>
-
-                        <p>После выбора размера - укажите в заметках желаемый цвет и пожелания, или после поступления
-                            заказа наши менеджеры свяжуться с Вами и уточнят данную информацию.</p>
-                    </div>
-                    <div class="tab-pane" id="tab-review">
-                        <form class="form-horizontal" id="form-review">
-                            <div id="review">
-                                <p>Нет отзывов об этом товаре.</p>
-                            </div>
-                            <h2>Написать отзыв</h2>
-                            Пожалуйста <a href="https://rusmodern.ru/index.php?route=account/login"> авторизуйтесь</a>
-                            или <a href="https://rusmodern.ru/simpleregister/"> зарегистрируйтесь</a> для просмотра
-                        </form>
+                        {{data.description}}
                     </div>
                 </div>
             </div>

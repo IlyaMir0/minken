@@ -1,4 +1,4 @@
 columns:
     size:
         label: 'размер товара'
-        type: number
+        type: text

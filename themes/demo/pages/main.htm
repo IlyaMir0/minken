@@ -33,7 +33,6 @@ $this['id'] = $this->param('id');
     </h1>
     <div class="row products-category featured_carousel mod container">
       {% for i in ProductList.getlist()[:3] %}
-
       <div class="product-grid col-lg-12 col-md-12 col-sm-12 col-xs-3">
         <div class="product-thumb clearfix">
           <div class="image"><a href="/product/{{ i.slug }}"><img src="{{i.images[0].url|media}}" alt="" title=""
@@ -59,50 +58,15 @@ $this['id'] = $this->param('id');
       {% endfor %}
     </div>
   </section>
-  <!-- <footer class="footer">
-    <div class="footer__inner container">
-      <div class="footer__items">
-        <div class="footer__item">
-          <h2 class="footer__title">Скидка 10% за подписку на наши новости</h2>
-          <div class="formfield">
-            <p class="formfield__wrap">
-              <input class="formfield__input js-address" type="text" name="address" placeholder="Адрес доставки">
-            <h5 class="formfield__text">Подписаться</h5>
-            </p>
-            <p class="formfield__placeholder-visible">
-              Нажимая кнопку “Подписаться”, Вы соглашаетесь с <ins>политикой конфиденциальности</ins>
-            </p>
-          </div>
-        </div>
-        <div class="footer__item-references">
-          <a class="footer__item-reference">Каталог</a>
-          <a class="footer__item-reference">Оплата и доставка</a>
-          <a class="footer__item-reference">Telegramm</a>
-          <a class="footer__item-reference">О компании</a>
-          <a class="footer__item-reference">Условия возврата</a>
-          <a class="footer__item-reference">WhatsApp</a>
-          <a class="footer__item-reference">Магазины</a>
-          <a class="footer__item-reference">Бонусная система</a>
-          <a class="footer__item-reference">Youtube</a>
-          <a class="footer__item-reference">Новости</a>
-          <a class="footer__item-reference">Подарочный сертификат</a>
-          <a class="footer__item-reference">VK</a>
-        </div>
-      </div>
-      <div class="footer__item-info">
-        <div class="footer__item-info_text">© All rights reserved</div>
-        <div class="footer__item-info_text">Публичная оферта</div>
-        <div class="footer__item-info_text">Политика конфиденциальности</div>
-        <div class="footer__item-info_text"> Сделано в студии <span class="footer__item-info_icon"></span> 5 углов</div>
-      </div>
-    </div>
-  </footer> -->
-  <!-- <script src="../assets/javascript/app.js"></script> -->
+  
   <script>
     var swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
       speed: 500,
       effect: "fade",
+      autoplay: {
+        delay: 2500,
+      },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -111,15 +75,11 @@ $this['id'] = $this->param('id');
         el: ".swiper-pagination",
         clickable: true,
       },
-      keyboard: true,
       loop: true,
       simulateTouch: false,
       grabCursor: true,
       touchRatio: 2,
       touchAngle: 45,
-      autoplay: {
-        delay: 3000,
-      },
     });
 
   </script>

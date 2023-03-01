@@ -87,3 +87,12 @@
 1.0.30:
     - 'Updated table ilyamir0_minken_products'
     - builder_table_update_ilyamir0_minken_products_5.php
+1.0.31:
+    - 'Updated table ilyamir0_minken_sizes'
+    - builder_table_update_ilyamir0_minken_sizes_14.php
+1.0.32:
+    - 'Updated table ilyamir0_minken_sizes'
+    - builder_table_update_ilyamir0_minken_sizes_15.php
+1.0.33:
+    - 'Updated table ilyamir0_minken_sizes'
+    - builder_table_update_ilyamir0_minken_sizes_16.php

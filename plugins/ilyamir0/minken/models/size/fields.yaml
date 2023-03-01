@@ -2,4 +2,4 @@ fields:
     size:
         label: 'размер товара'
         span: auto
-        type: number
+        type: text

@@ -11,7 +11,7 @@ $this['backendUrl'] = Backend::url('/');
         <!-- Верхнее меню навигации -->
         <div class="topnav">
             <a href="/">
-                <img src="{{ 'assets/images/лэйбл для колпака.jpg'|theme }}" class="header__logo" alt="">
+                <img src="{{ 'assets/images/лого.png'|theme }}" class="header__logo" alt="">
             </a>
             <div id="myLinks">
                 <a href="/catalog">Каталог</a>
@@ -23,9 +23,10 @@ $this['backendUrl'] = Backend::url('/');
                         <div class="header__icons">
                             <a target="_blank" href="https://wa.me/89184943020?text=Здравствуйте, хочу оформить заказ"
                                 class="header__info-whatsApp"></a>
-                            <a target="_blank" href="https://web-telegram.ru/#911160145" class="header__info-telegramm"></a>
+                            <a target="_blank" href="https://web-telegram.ru/#911160145"
+                                class="header__info-telegramm"></a>
                         </div>
-        
+
                     </div>
                     <div class="header__info-burger">
                     </div>
@@ -39,33 +40,40 @@ $this['backendUrl'] = Backend::url('/');
     <div class="header__inner container">
         <div class="header-row">
             <a href="/">
-                <img src="{{ 'assets/images/лэйбл для колпака.jpg'|theme }}" class="header__logo" alt="">
+                <img src="{{ 'assets/images/лого.png'|theme }}" class="header__logo" alt="">
+                <div class="formfield">
+                    <p class="formfield__placeholder-visible">
+                        "Мягкий шик из <ins> меха и шелка</ins>."
+                    </p>
+                </div>
             </a>
             <!-- <div class="header__logo"></div> -->
-            <div class="header__nav">
-                <a class="header__nav-menu" href="/catalog">Каталог</a>
-                <a class="header__nav-menu" href="#">О компании</a>
-                <a class="header__nav-menu" href="#">Магазины</a>
+            <div class="header__nav-wrap">
+                <div class="header__nav">
+                    <a class="header__nav-menu" href="/catalog">Каталог</a>
+                    <a class="header__nav-menu" href="#">О компании</a>
+                    <a class="header__nav-menu" href="#">Магазины</a>
+                </div>
+                <div class="header__info">
+                    <div class="header__info-wrapper">
+                        <a href="mailto:denis-nechkin@yandex.ru" class="header__info-email">denis-nechkin@yandex.ru</a>
+                        <a href="tel:+79184943020" class="header__info-number">+7(918)4943020</a>
+                        <div class="header__icons">
+                            <a target="_blank" href="https://wa.me/89184943020?text=Здравствуйте, хочу оформить заказ"
+                                class="header__info-whatsApp"></a>
+                            <a target="_blank" href="https://web-telegram.ru/#911160145" class="header__info-telegramm"></a>
+                        </div>
+                    </div>
+                    <div class="header__info-burger">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="header__nav-mobile">
             <a class="header__nav-menu" href="/catalog">Каталог</a>
             <a class="header__nav-menu" href="#">О компании</a>
         </div>
-        <div class="header__info">
-            <div class="header__info-wrapper">
-                <a href="mailto:denis-nechkin@yandex.ru" class="header__info-email">denis-nechkin@yandex.ru</a>
-                <a href="tel:+79184943020" class="header__info-number">+7(918)4943020</a>
-                <div class="header__icons">
-                    <a target="_blank" href="https://wa.me/89184943020?text=Здравствуйте, хочу оформить заказ"
-                        class="header__info-whatsApp"></a>
-                    <a target="_blank" href="https://web-telegram.ru/#911160145" class="header__info-telegramm"></a>
-                </div>
-
-            </div>
-            <div class="header__info-burger">
-            </div>
-        </div>
+        
         <!--   <div class="header__select-favorite">
       <div class="header__select-cart__count">4</div>
     </div>

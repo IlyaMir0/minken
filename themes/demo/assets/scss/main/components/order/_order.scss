@@ -38,7 +38,7 @@
 
         &.active {
             color: $Primary-black;
-
+            cursor:default;
             &:hover {
                 color: $Primary-black;
             }

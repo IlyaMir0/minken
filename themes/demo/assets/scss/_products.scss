@@ -9,6 +9,8 @@
   }
 }
 
+
+
 #container h2,
 #container h3 {
   margin: 0 0 20px;
@@ -1107,14 +1109,7 @@ div.required .control-label:before {
   color: #666
 }
 
-.tab-content {
-  padding: 15px 15px 10px;
-  margin-bottom: 20px;
-  z-index: 2;
-  border-radius: 0 0 4px 4px;
-  border: 1px solid #ddd;
-  border-top: 0
-}
+
 
 #tab-description ul {
   margin-left: 20px;
@@ -1124,6 +1119,15 @@ div.required .control-label:before {
 .product-tab,
 .product-tab .tabs {
   margin-bottom: 20px
+}
+
+.tab-pane {
+  padding: 15px 15px 10px;
+  margin-bottom: 20px;
+  z-index: 2;
+  border-radius: 0 0 4px 4px;
+  border: 1px solid #ddd;
+  border-top: 0
 }
 
 .tab-sub {
@@ -1761,6 +1765,24 @@ div.required .control-label:before {
   border: 1px solid transparent;
   transition: all .3s ease-in-out;
 }
+.owl-carousel .product-thumb, .product-detailed {
+  height: 502px;
+  @media screen and (max-width: 1400px) {
+    height: 500px;
+  }
+  @media screen and (max-width: 1200px) {
+    height: 440px;
+  }
+  @media screen and (max-width: 990px) {
+    height: 400px;
+  }
+  @media screen and (max-width: 770px) {
+    height: 350px;
+  }
+  @media screen and (max-width: 576px) {
+    height: auto;
+  }
+}
 
 .owl-carousel .product-thumb {
   margin-right: 1px
@@ -1995,17 +2017,12 @@ div.required .control-label:before {
 
 .product-info .price {
   font-size: 25px;
-  font-weight: 700
+  font-weight: normal
 }
 
 .product-info .price .real {
-  color: #fff;
-  background: url(../image/price-tag.png) left top no-repeat #555;
-  height: 48px;
-  line-height: 48px;
-  padding: 0 18px 0 32px;
-  border-radius: 0 4px 4px 0;
-  display: inline-block
+  color: $Primary-black;
+  padding: 0;
 }
 
 .product-info .price-old {
